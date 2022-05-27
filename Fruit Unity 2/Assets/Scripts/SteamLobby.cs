@@ -4,6 +4,7 @@ using UnityEngine;
 using Mirror;
 using Steamworks;
 using UnityEngine.UI;
+using TMPro;
 
 public class SteamLobby : MonoBehaviour
 {
@@ -18,8 +19,10 @@ public class SteamLobby : MonoBehaviour
     private CustomNetworkManager manager;
 
     //Gameobject
-    public GameObject HostButton;
-    public Text LobbyNameText;
+    public GameObject OnlineMenu;
+    public GameObject LobbyMenu;
+    public TextMeshProUGUI LobbyNameText;
+
 
     private void Start()
     {
@@ -65,9 +68,9 @@ public class SteamLobby : MonoBehaviour
     private void OnLobbyEntered(LobbyEnter_t callback)
     {
         //Everyone
-        HostButton.SetActive(false);
+        OnlineMenu.SetActive(false);
         CurrentLobbyID = callback.m_ulSteamIDLobby;
-        LobbyNameText.gameObject.SetActive(true);
+        LobbyMenu.gameObject.SetActive(true);
         LobbyNameText.text = SteamMatchmaking.GetLobbyData(new CSteamID(callback.m_ulSteamIDLobby), "name");
 
         //Clients
