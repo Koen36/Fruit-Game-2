@@ -2,9 +2,13 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CustomNetworkManager
+    - LobbyController
+    - PlayerListItem
+    - PlayerObjectController
     - SteamLobby
     Mirror.dll:
     - Mirror.FizzySteam.FizzySteamworks
+    - Mirror.NetworkIdentity
     - SteamManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -24,9 +28,14 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
@@ -47,6 +56,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
+    - UnityEngine.RectOffset
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
@@ -58,6 +68,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.ScrollRect/ScrollRectEvent
+    - UnityEngine.UI.Scrollbar/ScrollEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: UnityEngine.CoreModule
@@ -88,6 +100,71 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   sceneClasses:
+    Assets/Scenes/Lobby.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1588}
+    - Class: 114
+      Script: {instanceID: 1590}
+    - Class: 114
+      Script: {instanceID: 2482}
+    - Class: 114
+      Script: {instanceID: 2828}
+    - Class: 114
+      Script: {instanceID: 3414}
+    - Class: 114
+      Script: {instanceID: 3646}
+    - Class: 114
+      Script: {instanceID: 4372}
+    - Class: 114
+      Script: {instanceID: 5828}
+    - Class: 114
+      Script: {instanceID: 6512}
+    - Class: 114
+      Script: {instanceID: 6680}
+    - Class: 114
+      Script: {instanceID: 7084}
+    - Class: 114
+      Script: {instanceID: 7096}
+    - Class: 114
+      Script: {instanceID: 7572}
+    - Class: 114
+      Script: {instanceID: 8366}
+    - Class: 114
+      Script: {instanceID: 54886}
+    - Class: 114
+      Script: {instanceID: 54980}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -103,8 +180,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -114,35 +189,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1590}
     - Class: 114
-      Script: {instanceID: 2338}
+      Script: {instanceID: 2336}
     - Class: 114
-      Script: {instanceID: 2484}
+      Script: {instanceID: 2482}
     - Class: 114
-      Script: {instanceID: 2830}
+      Script: {instanceID: 2828}
     - Class: 114
-      Script: {instanceID: 3416}
+      Script: {instanceID: 3414}
     - Class: 114
-      Script: {instanceID: 3856}
+      Script: {instanceID: 3854}
     - Class: 114
-      Script: {instanceID: 4528}
+      Script: {instanceID: 4526}
     - Class: 114
-      Script: {instanceID: 4656}
+      Script: {instanceID: 4654}
     - Class: 114
-      Script: {instanceID: 4958}
+      Script: {instanceID: 4930}
     - Class: 114
-      Script: {instanceID: 5830}
+      Script: {instanceID: 4956}
     - Class: 114
-      Script: {instanceID: 6514}
+      Script: {instanceID: 5828}
     - Class: 114
-      Script: {instanceID: 6682}
+      Script: {instanceID: 6512}
     - Class: 114
-      Script: {instanceID: 6748}
+      Script: {instanceID: 6680}
     - Class: 114
-      Script: {instanceID: 7086}
+      Script: {instanceID: 6746}
     - Class: 114
-      Script: {instanceID: 7896}
+      Script: {instanceID: 7084}
     - Class: 114
-      Script: {instanceID: 8194}
+      Script: {instanceID: 7894}
+    - Class: 114
+      Script: {instanceID: 8192}
+    - Class: 114
+      Script: {instanceID: 53076}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1224,7 +1303,7 @@ ScriptsOnlyBuild:
     className: NetworkStartPosition
   - hash:
       serializedVersion: 2
-      Hash: a6b8e9e710497c8fe0dd78aca4de7647
+      Hash: cab36b7ef8cfacf16e50c841b2798fe1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SteamLobby
@@ -1446,7 +1525,7 @@ ScriptsOnlyBuild:
     className: CanvasUI
   - hash:
       serializedVersion: 2
-      Hash: 7b6113efb956a45fe463259b12a0687f
+      Hash: b874bca89b3268d284f77d654179b178
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CustomNetworkManager
@@ -1732,7 +1811,26 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: de77c8bfdcc17bace5d2d1a49714a41b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerObjectController
+  - hash:
+      serializedVersion: 2
+      Hash: 22972c83fb9559bc0c418ef6589707d6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerListItem
+  - hash:
+      serializedVersion: 2
+      Hash: 7e1d6d77da2d4c45a184909629acbc4b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LobbyController
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
+  - Assets/Scenes/Lobby.unity
   playerPath: C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity.exe

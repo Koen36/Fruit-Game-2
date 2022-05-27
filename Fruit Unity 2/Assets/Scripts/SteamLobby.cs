@@ -8,7 +8,7 @@ using TMPro;
 
 public class SteamLobby : MonoBehaviour
 {
-    // public static SteamLobby Instance;
+    public static SteamLobby Instance;
 
     //Callbacks
     protected Callback<LobbyCreated_t> LobbyCreated;
@@ -20,11 +20,6 @@ public class SteamLobby : MonoBehaviour
     private const string HostAddressKey = "HostAddress";
     private CustomNetworkManager manager;
 
-    //Gameobject
-    public GameObject OnlineMenu;
-    public GameObject LobbyMenu;
-    public TextMeshProUGUI LobbyNameText;
-
 
     private void Start()
     {
@@ -34,10 +29,10 @@ public class SteamLobby : MonoBehaviour
             return;
         }
 
-        //if (Instance == null)
-        //{
-        //  Instance = this;
-        //}
+        if (Instance == null)
+        {
+            Instance = this;
+        }
 
         manager = GetComponent<CustomNetworkManager>();
 
@@ -75,10 +70,7 @@ public class SteamLobby : MonoBehaviour
     private void OnLobbyEntered(LobbyEnter_t callback)
     {
         //Everyone
-        OnlineMenu.SetActive(false);
         CurrentLobbyID = callback.m_ulSteamIDLobby;
-        LobbyMenu.gameObject.SetActive(true);
-        LobbyNameText.text = SteamMatchmaking.GetLobbyData(new CSteamID(callback.m_ulSteamIDLobby), "name");
 
         //Clients
         if (NetworkServer.active)
