@@ -25,6 +25,10 @@ public class LobbyController : MonoBehaviour
     private List<PlayerListItem> PlayerListItems = new List<PlayerListItem>();
     public PlayerObjectController LocalplayerController;
 
+    //Ready
+    public Button StartGameButton;
+    public TextMeshProUGUI ReadyButtonText;
+
     //Manager
     private CustomNetworkManager manager;
     private CustomNetworkManager Manager
@@ -47,12 +51,70 @@ public class LobbyController : MonoBehaviour
         }
     }
 
+
+    //READY STATUS
+    public void ReadyPlayer()
+    {
+        LocalplayerController.ChangeReady();
+    }
+
+    public void UpdateButton()
+    {
+        if (LocalplayerController.Ready)
+        {
+            ReadyButtonText.text = "Unready";
+        }
+        else
+        {
+            ReadyButtonText.text = "Ready";
+        }
+    }
+
+    public void CheckIfAllReady()
+    {
+        bool AllReady = false;
+
+        foreach(PlayerObjectController player in Manager.GamePlayers)
+        {
+            if (player.Ready)
+            {
+                AllReady = true;
+            }
+            else
+            {
+                AllReady = false;
+                break;
+            }
+        }
+
+        if (AllReady)
+        {
+            if(LocalplayerController.PlayerIdNumber == 1)
+            {
+                StartGameButton.interactable = true;
+            }
+            else
+            {
+                StartGameButton.interactable = false;
+            }
+        }
+        else
+        {
+            StartGameButton.interactable = false;
+        }
+    }
+
+
+
+    //LOBBY
     public void UpdateLobbyName()
     {
         CurrentLobbyID = Manager.GetComponent<SteamLobby>().CurrentLobbyID;
         LobbyNameText.text = SteamMatchmaking.GetLobbyData(new CSteamID(CurrentLobbyID), "name");
     }
 
+
+    //PLAYER LIST
     public void UpdatePlayerList()
     {
         if (!PlayerItemCreated) //HOST
@@ -89,6 +151,7 @@ public class LobbyController : MonoBehaviour
             NewPlayerItemScript.PlayerName = player.PlayerName;
             NewPlayerItemScript.ConnectionID = player.ConnectionID;
             NewPlayerItemScript.PlayerSteamID = player.PlayerSteamID;
+            NewPlayerItemScript.Ready = player.Ready;
             NewPlayerItemScript.SetPlayerValues();
 
 
@@ -112,6 +175,7 @@ public class LobbyController : MonoBehaviour
                 NewPlayerItemScript.PlayerName = player.PlayerName;
                 NewPlayerItemScript.ConnectionID = player.ConnectionID;
                 NewPlayerItemScript.PlayerSteamID = player.PlayerSteamID;
+                NewPlayerItemScript.Ready = player.Ready;
                 NewPlayerItemScript.SetPlayerValues();
 
 
@@ -132,10 +196,16 @@ public class LobbyController : MonoBehaviour
                 if(PlayerListItemScript.ConnectionID == player.ConnectionID) //Check if us pressing it
                 {
                     PlayerListItemScript.PlayerName = player.PlayerName;
+                    PlayerListItemScript.Ready = player.Ready;
                     PlayerListItemScript.SetPlayerValues();
+                    if (player == LocalplayerController) //If PLAYER is LOCAL
+                    {
+                        UpdateButton();
+                    }
                 }
             }
         }
+        CheckIfAllReady();
     } //UPDATE EVERYONE
 
     public void RemovePlayerItem()
@@ -160,5 +230,12 @@ public class LobbyController : MonoBehaviour
             }
         }
 
+    } //REMOVE disconnected players
+
+
+    //START GAME
+    public void StartGame(string SceneName)
+    {
+        LocalplayerController.CanStartGame(SceneName);
     }
 }

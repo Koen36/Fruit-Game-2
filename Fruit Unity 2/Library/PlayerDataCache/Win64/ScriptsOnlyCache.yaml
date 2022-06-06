@@ -4,8 +4,12 @@ ScriptsOnlyBuild:
     - CustomNetworkManager
     - LobbyController
     - PlayerListItem
+    - PlayerMovementController
     - PlayerObjectController
+    - StandardButtonFunctions
     - SteamLobby
+    Mirror.Components.dll:
+    - Mirror.NetworkTransform
     Mirror.dll:
     - Mirror.FizzySteam.FizzySteamworks
     - Mirror.NetworkIdentity
@@ -91,6 +95,9 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: Assembly-CSharp
+    fullTypeName: StandardButtonFunctions
+    methodName: QuitGame
+  - assembly: Assembly-CSharp
     fullTypeName: SteamLobby
     methodName: HostLobby
   - assembly: UnityEngine.CoreModule
@@ -99,7 +106,46 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: LobbyController
+    methodName: StartGame
+  - assembly: Assembly-CSharp
+    fullTypeName: LobbyController
+    methodName: ReadyPlayer
   sceneClasses:
+    Assets/Scenes/Forest.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
     Assets/Scenes/Lobby.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -176,7 +222,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
@@ -226,9 +278,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 8140}
     - Class: 114
       Script: {instanceID: 8194}
+    - Class: 114
+      Script: {instanceID: 8570}
+    - Class: 114
+      Script: {instanceID: 27664}
+    - Class: 114
+      Script: {instanceID: 49390}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -1601,7 +1661,7 @@ ScriptsOnlyBuild:
     className: Tank
   - hash:
       serializedVersion: 2
-      Hash: de77c8bfdcc17bace5d2d1a49714a41b
+      Hash: 37a274472f9a6f01b96ae8a5b2eb58fb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerObjectController
@@ -1685,7 +1745,7 @@ ScriptsOnlyBuild:
     className: PhysicsCollision
   - hash:
       serializedVersion: 2
-      Hash: 22972c83fb9559bc0c418ef6589707d6
+      Hash: c103799824cc7d7d892c3b949de3db07
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerListItem
@@ -1763,7 +1823,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 7e1d6d77da2d4c45a184909629acbc4b
+      Hash: 1a4cee429a76739d828ee1f8a049d722
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LobbyController
@@ -1833,8 +1893,21 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StandardButtonFunctions
+  - hash:
+      serializedVersion: 2
+      Hash: 0cf91ca6dc0f6676b1464696fad34a56
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerMovementController
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Lobby.unity
+  - Assets/Scenes/Forest.unity
   playerPath: C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity.exe

@@ -11,7 +11,9 @@ public class PlayerObjectController : NetworkBehaviour
     [SyncVar] public int PlayerIdNumber;
     [SyncVar] public ulong PlayerSteamID;
     [SyncVar(hook = nameof(PlayerNameUpdate))] public string PlayerName; //Whenever string changes, function will be called
+    [SyncVar(hook = nameof(PlayerReadyUpdate))] public bool Ready;
 
+    //Manager
     private CustomNetworkManager manager;
 
     private CustomNetworkManager Manager
@@ -27,6 +29,13 @@ public class PlayerObjectController : NetworkBehaviour
     }
 
 
+    private void Start()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
+
+    //GET INFO AND UPDATE INFO
     public override void OnStartAuthority()
     {
         CmdSetPlayerName(SteamFriends.GetPersonaName().ToString()); //Retrieves username Steam
@@ -48,6 +57,8 @@ public class PlayerObjectController : NetworkBehaviour
         LobbyController.Instance.UpdatePlayerList();
     }
 
+
+    //PLAYER NAME
     [Command]
     private void CmdSetPlayerName(string PlayerName)
     {
@@ -64,5 +75,49 @@ public class PlayerObjectController : NetworkBehaviour
         {
             LobbyController.Instance.UpdatePlayerList();
         }
+    }
+
+
+    //READY STATUS
+    [Command]
+    private void CmdSetPlayerReady()
+    {
+        this.PlayerReadyUpdate(this.Ready, !this.Ready); //Changes Ready to opposite
+    }
+
+    private void PlayerReadyUpdate(bool OldValue, bool NewValue)
+    {
+        if (isServer) //If YOU are the HOST
+        {
+            this.Ready = NewValue;
+        }
+        if (isClient) //If YOU are the CLIENT
+        {
+            LobbyController.Instance.UpdatePlayerList();
+        }
+    }
+
+    public void ChangeReady()
+    {
+        if (hasAuthority)
+        {
+            CmdSetPlayerReady();
+        }
+    }
+
+
+    //START GAME
+    public void CanStartGame(string SceneName)
+    {
+        if (hasAuthority)
+        {
+            CmdCanStartGame(SceneName);
+        }
+    }
+
+    [Command]
+    public void CmdCanStartGame(string SceneName)
+    {
+        manager.StartGame(SceneName);
     }
 }

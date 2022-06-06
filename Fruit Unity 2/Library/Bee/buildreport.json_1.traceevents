@@ -1,459 +1,470 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1654540539558747, "dur": 922337203685477580, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1654540539560817, "dur": 56089, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1654540539620485, "dur": 3116168, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1654540542736685, "dur": 10109, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1654540552001283, "dur": 922337203685477580, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1654540552001645, "dur": 14515, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1654540552016164, "dur": 80622, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1654540552096832, "dur": 811429, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1654540552908265, "dur": 981222, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1654540553889490, "dur": 14214, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1654540553904601, "dur": 29, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654548197323953, "dur": 922337203685477580, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654548197327609, "dur": 56871, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654548197384845, "dur": 113378, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654548197498263, "dur": 757409, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654548198255674, "dur": 1928653, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654548200184360, "dur": 9958, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654548211420782, "dur": 922337203685477580, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654548211421129, "dur": 2293, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654548211423425, "dur": 91212, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654548211514639, "dur": 418399, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654548211933041, "dur": 336273, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654548212269316, "dur": 1891, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654548212271967, "dur": 30, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1654540552070582, "dur":1917, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552072515, "dur":359, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1654540552072910, "dur":32, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1654540552072943, "dur":417, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1654540552073403, "dur":971, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552074374, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085618, "dur":104, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085722, "dur":61, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085783, "dur":26, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085809, "dur":19, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085829, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085832, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085842, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085845, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085854, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085856, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085865, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085867, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085875, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085878, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085886, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085888, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085897, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085897, "dur":3, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552085921, "dur":2535, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1654540552073693, "dur":689, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540552074385, "dur":11226, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540552073741, "dur":652, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540552074393, "dur":11264, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540552073732, "dur":655, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540552074388, "dur":11277, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540552073774, "dur":625, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540552074399, "dur":11241, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1654540552073798, "dur":606, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1654540552074404, "dur":11230, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540552073834, "dur":575, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540552074409, "dur":11219, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540552073860, "dur":554, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540552074414, "dur":11209, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540552073895, "dur":524, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540552074420, "dur":11198, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552090562, "dur":795, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1654540553904823, "dur": 495, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1654548211492370, "dur":3057, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211495443, "dur":193, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1654548211495666, "dur":30, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1654548211495697, "dur":423, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1654548211496164, "dur":921, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211497085, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504531, "dur":153, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504684, "dur":50, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504734, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504739, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504748, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504751, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504759, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504761, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504770, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504772, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504780, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504782, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504789, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504792, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504798, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504801, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504809, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504809, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211504813, "dur":2957, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1654548211497142, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548211497143, "dur":7383, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548211498894, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548211498895, "dur":5662, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548211498024, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548211498024, "dur":6505, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654548211499758, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654548211499758, "dur":4795, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548211500618, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548211500618, "dur":3931, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548211501461, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548211501461, "dur":3082, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548211502276, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548211502276, "dur":2262, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654548211503091, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654548211503091, "dur":1442, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548211510110, "dur":620, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1654548212272126, "dur": 462, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
 { "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 35942, "tid": 1, "ts": 1654540552676536, "dur": 211658, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1654540552678087, "dur": 66490, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1654540552855150, "dur": 15779, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1654540552870932, "dur": 17253, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1654540552872059, "dur": 14947, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1654540552894991, "dur": 1903, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1654540552893827, "dur": 3103, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1654540553905433, "dur": 354, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1654548211733877, "dur": 174423, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1654548211735369, "dur": 71727, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1654548211884228, "dur": 7689, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1654548211891919, "dur": 16372, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1654548211892924, "dur": 14271, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1654548211914683, "dur": 1859, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1654548211913621, "dur": 2950, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654548212272703, "dur": 343, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1654540552978273, "dur":1843, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552980131, "dur":176, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1654540552980326, "dur":33, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1654540552980361, "dur":401, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1654540552980814, "dur":923, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540552981737, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874130, "dur":141, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874272, "dur":19, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874291, "dur":38, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874330, "dur":15, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874345, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874348, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874358, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874360, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874368, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874371, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874379, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874381, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874390, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874392, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874402, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874404, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874413, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874428, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553874464, "dur":2562, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1654540552981093, "dur":652, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540552981748, "dur":9305, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540552991067, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1654540552991069, "dur":143, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540552991218, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1654540552991220, "dur":363, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540552991584, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":1, "ts":1654540552991745, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540552991863, "dur":8818, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":1, "ts":1654540553000682, "dur":152, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553000837, "dur":64972, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":1, "ts":1654540553065810, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553065952, "dur":15202, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1654540553081155, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553081296, "dur":44622, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1654540553125919, "dur":347, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553126270, "dur":33840, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1654540553160111, "dur":170, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553160284, "dur":23135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1654540553183420, "dur":347, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553183769, "dur":17427, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1654540553201198, "dur":194, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553201396, "dur":42445, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1654540553243842, "dur":376, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553244222, "dur":74638, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1654540553318861, "dur":375, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553319240, "dur":19785, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1654540553339026, "dur":377, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553339407, "dur":48019, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1654540553387427, "dur":242, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553387673, "dur":1187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":1, "ts":1654540553388861, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553389003, "dur":39720, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":1, "ts":1654540553428725, "dur":194, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553428922, "dur":137908, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1654540553566832, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553567001, "dur":29839, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":1, "ts":1654540553596841, "dur":228, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553597072, "dur":78420, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":1, "ts":1654540553675493, "dur":156, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553675651, "dur":44915, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/kcp2k.dll" }}
-,{ "pid":12345, "tid":1, "ts":1654540553720567, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553720710, "dur":159, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level0" }}
-,{ "pid":12345, "tid":1, "ts":1654540553720875, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553720892, "dur":1518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level0" }}
-,{ "pid":12345, "tid":1, "ts":1654540553722484, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":1, "ts":1654540553722566, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1654540553722572, "dur":1323, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":1, "ts":1654540553723969, "dur":150161, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540552981130, "dur":620, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540552981750, "dur":9313, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540552991067, "dur":10021, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":2, "ts":1654540553001088, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540553001220, "dur":67448, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":2, "ts":1654540553068669, "dur":155, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540553068826, "dur":16120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1654540553084947, "dur":242, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540553085192, "dur":50323, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1654540553135515, "dur":220, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540553135737, "dur":41197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1654540553176934, "dur":191, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540553177129, "dur":18307, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1654540553195437, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540553195586, "dur":29764, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1654540553225351, "dur":172, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540553225525, "dur":26160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1654540553251687, "dur":187, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540553251878, "dur":23598, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1654540553275477, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540553275610, "dur":27318, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1654540553302928, "dur":158, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540553303087, "dur":148782, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1654540553451870, "dur":160, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540553452032, "dur":66259, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":2, "ts":1654540553518292, "dur":956, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540553519252, "dur":131732, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":2, "ts":1654540553650986, "dur":697, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540553651687, "dur":33447, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":2, "ts":1654540553685135, "dur":158, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540553685296, "dur":95898, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":2, "ts":1654540553781205, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1654540553781490, "dur":1352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":2, "ts":1654540553782917, "dur":91229, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540552981163, "dur":593, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540552981757, "dur":9303, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540552991067, "dur":29531, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":3, "ts":1654540553020599, "dur":173, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553020776, "dur":23953, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553044731, "dur":331, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553045065, "dur":17472, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553062538, "dur":209, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553062748, "dur":73344, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553136093, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553136221, "dur":16281, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553152503, "dur":376, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553152882, "dur":27225, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553180108, "dur":200, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553180311, "dur":29883, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553210195, "dur":195, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553210394, "dur":33878, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553244273, "dur":129, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553244404, "dur":27262, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553271667, "dur":180, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553271851, "dur":17924, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553289776, "dur":167, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553289946, "dur":30650, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553320597, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553320740, "dur":37258, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553358000, "dur":176, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553358180, "dur":1107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553359288, "dur":306, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553359595, "dur":32768, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553392364, "dur":143, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553392508, "dur":20695, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553413203, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553413345, "dur":48364, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553461710, "dur":192, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553461906, "dur":59266, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553521173, "dur":329, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553521504, "dur":136064, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553657569, "dur":144, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553657715, "dur":123499, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Mirror.Components.dll" }}
-,{ "pid":12345, "tid":3, "ts":1654540553781214, "dur":310, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1654540553781525, "dur":92603, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540552981193, "dur":568, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540552981761, "dur":9300, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540552991067, "dur":281, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1654540552991348, "dur":143, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540552991492, "dur":9669, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1654540553001161, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540553001293, "dur":27635, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity.exe" }}
-,{ "pid":12345, "tid":4, "ts":1654540553028929, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540553029027, "dur":34384, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1654540553063411, "dur":157, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540553063570, "dur":21711, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1654540553085281, "dur":283, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540553085566, "dur":25111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1654540553110677, "dur":253, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540553110932, "dur":151445, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":4, "ts":1654540553262377, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540553262521, "dur":21591, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1654540553284113, "dur":161, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540553284276, "dur":18611, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1654540553302888, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540553303031, "dur":36785, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1654540553339817, "dur":1332, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540553341150, "dur":58005, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":4, "ts":1654540553399157, "dur":342, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540553399503, "dur":867, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":4, "ts":1654540553400370, "dur":134, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540553400505, "dur":48881, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Telepathy.dll" }}
-,{ "pid":12345, "tid":4, "ts":1654540553449387, "dur":196, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540553449586, "dur":126197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":4, "ts":1654540553575784, "dur":169, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540553575956, "dur":79495, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":4, "ts":1654540553655452, "dur":188, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540553655644, "dur":125535, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Mirror.Examples.dll" }}
-,{ "pid":12345, "tid":4, "ts":1654540553781181, "dur":334, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1654540553781518, "dur":92608, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1654540552981233, "dur":533, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1654540552981766, "dur":9319, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1654540552991086, "dur":220, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1654540552991307, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1654540552991434, "dur":192, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":5, "ts":1654540552991626, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1654540552991759, "dur":14477, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":5, "ts":1654540553006237, "dur":1181, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1654540553007420, "dur":57093, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1654540553064513, "dur":144, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1654540553064658, "dur":44972, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1654540553109631, "dur":367, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1654540553110002, "dur":150970, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1654540553260973, "dur":199, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1654540553261176, "dur":51554, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1654540553312732, "dur":195, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1654540553312931, "dur":29674, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1654540553342606, "dur":144, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1654540553342752, "dur":227645, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":5, "ts":1654540553570398, "dur":168, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1654540553570569, "dur":81462, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":5, "ts":1654540553652032, "dur":163, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1654540553652196, "dur":162866, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":5, "ts":1654540553815064, "dur":167, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1654540553815234, "dur":58904, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540552981270, "dur":501, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540552981771, "dur":9305, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540552991080, "dur":207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1654540552991287, "dur":261, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540552991549, "dur":173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1654540552991722, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540552991847, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":6, "ts":1654540552992004, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540552992123, "dur":278, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1654540552992401, "dur":265, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540552992667, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":6, "ts":1654540552992820, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540552992931, "dur":157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":6, "ts":1654540552993088, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540552993199, "dur":36824, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553030023, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553030155, "dur":30057, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553060214, "dur":350, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553060568, "dur":26837, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553087405, "dur":424, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553087831, "dur":28684, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553116516, "dur":190, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553116710, "dur":22531, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553139242, "dur":145, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553139390, "dur":44972, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553184362, "dur":272, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553184635, "dur":16593, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553201228, "dur":184, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553201414, "dur":20994, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553222409, "dur":180, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553222592, "dur":21177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553243771, "dur":468, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553244241, "dur":18224, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553262465, "dur":150, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553262617, "dur":24720, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553287338, "dur":160, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553287500, "dur":44337, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553331838, "dur":983, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553332825, "dur":81893, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553414719, "dur":144, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553414864, "dur":82569, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553497434, "dur":665, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553498103, "dur":69554, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553567657, "dur":316, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553567975, "dur":83887, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553651862, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553651993, "dur":221785, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":6, "ts":1654540553873780, "dur":322, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1654540553874108, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":6, "ts":1654540553874110, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540552981294, "dur":482, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540552981777, "dur":9293, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540552991074, "dur":9922, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":7, "ts":1654540553000997, "dur":129, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553001128, "dur":126559, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553127688, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553127831, "dur":32264, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553160096, "dur":189, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553160287, "dur":16604, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553176892, "dur":544, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553177438, "dur":17406, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553194845, "dur":194, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553195043, "dur":17724, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553212767, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553212916, "dur":19351, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553232268, "dur":2156, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553234428, "dur":28630, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553263059, "dur":327, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553263387, "dur":20271, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553283659, "dur":396, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553284060, "dur":18516, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553302577, "dur":391, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553302972, "dur":18170, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553321143, "dur":136, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553321281, "dur":68801, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553390083, "dur":339, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553390424, "dur":815, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553391240, "dur":292, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553391533, "dur":933, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Environments.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553392466, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553392601, "dur":730, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553393331, "dur":129, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553393461, "dur":18491, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553411954, "dur":401, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553412357, "dur":177336, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553589694, "dur":227, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553589925, "dur":66239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/SimpleWebTransport.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553656165, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553656307, "dur":152470, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Mirror.dll" }}
-,{ "pid":12345, "tid":7, "ts":1654540553808778, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1654540553808957, "dur":65176, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540552981326, "dur":455, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540552981781, "dur":9283, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540552991067, "dur":190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1654540552991257, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540552991378, "dur":12986, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1654540553004365, "dur":501, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553004872, "dur":229, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":8, "ts":1654540553005102, "dur":183, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553005286, "dur":1807, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/where-allocations.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553007094, "dur":532, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553007627, "dur":21561, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553029189, "dur":152, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553029343, "dur":31023, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553060367, "dur":451, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553060820, "dur":19957, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553080778, "dur":215, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553080997, "dur":17779, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553098777, "dur":198, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553098980, "dur":34003, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553132984, "dur":350, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553133338, "dur":68868, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553202207, "dur":173, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553202381, "dur":45361, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553247743, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553247922, "dur":26635, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553274558, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553274725, "dur":105499, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553380226, "dur":222, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553380452, "dur":984, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553381436, "dur":795, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553382233, "dur":29773, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553412007, "dur":181, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553412192, "dur":69335, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553481528, "dur":286, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553481818, "dur":24135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553505954, "dur":189, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553506146, "dur":26761, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553532908, "dur":219, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553533131, "dur":137735, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553670867, "dur":393, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553671264, "dur":26297, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Mirror.Authenticators.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553697562, "dur":173, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553697738, "dur":722, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Plugins/x86_64/steam_api64.dll" }}
-,{ "pid":12345, "tid":8, "ts":1654540553698460, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553698582, "dur":188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
-,{ "pid":12345, "tid":8, "ts":1654540553698770, "dur":155, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553698926, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":8, "ts":1654540553699021, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553700154, "dur":3366, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":8, "ts":1654540553703599, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1654540553703679, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553703705, "dur":1314, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1654540553705094, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":8, "ts":1654540553705172, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553705178, "dur":1121, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":8, "ts":1654540553706371, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1654540553706447, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553706453, "dur":1107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1654540553707631, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":8, "ts":1654540553707709, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553707715, "dur":1556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":8, "ts":1654540553709345, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":8, "ts":1654540553709533, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553709648, "dur":756, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":8, "ts":1654540553710404, "dur":256, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553710661, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1654540553710749, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553710756, "dur":3462, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1654540553714293, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/resources.assets" }}
-,{ "pid":12345, "tid":8, "ts":1654540553714373, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553714380, "dur":1914, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/resources.assets" }}
-,{ "pid":12345, "tid":8, "ts":1654540553716367, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level1.resS" }}
-,{ "pid":12345, "tid":8, "ts":1654540553716441, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553716447, "dur":1262, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level1.resS" }}
-,{ "pid":12345, "tid":8, "ts":1654540553717779, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level1" }}
-,{ "pid":12345, "tid":8, "ts":1654540553717855, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553717861, "dur":1507, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level1" }}
-,{ "pid":12345, "tid":8, "ts":1654540553719441, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level0.resS" }}
-,{ "pid":12345, "tid":8, "ts":1654540553719515, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553719521, "dur":1650, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level0.resS" }}
-,{ "pid":12345, "tid":8, "ts":1654540553721245, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":8, "ts":1654540553721325, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553721331, "dur":1432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":8, "ts":1654540553722837, "dur":190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/boot.config" }}
-,{ "pid":12345, "tid":8, "ts":1654540553723027, "dur":129, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1654540553723157, "dur":150974, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1654540553879052, "dur":2162, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1654540553905896, "dur": 1157, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1654540553904587, "dur": 2500, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1654548212022901, "dur":3009, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212025923, "dur":192, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1654548212026161, "dur":32, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1654548212026194, "dur":407, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1654548212026638, "dur":1002, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212027640, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212255744, "dur":153, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212255897, "dur":55, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212255952, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212255956, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212255966, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212255968, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212255977, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212255980, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212255988, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212255991, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212256001, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212256003, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212256012, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212256014, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212256023, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212256025, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212256033, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212256046, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212256086, "dur":3091, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1654548212027680, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212027681, "dur":9317, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212037012, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1654548212037013, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212037136, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1654548212037138, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212037225, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1654548212037309, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212037387, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1654548212037484, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212037555, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1654548212037638, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212037713, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654548212037789, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212037861, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654548212037962, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212038051, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654548212038151, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212038226, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654548212038308, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212038379, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654548212038452, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212038523, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654548212038601, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212038677, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654548212038758, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212038835, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654548212038907, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212038989, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654548212039065, "dur":146, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212039212, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654548212039298, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212039374, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654548212039448, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212039516, "dur":196469, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654548212235985, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654548212236070, "dur":19670, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212029305, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212029305, "dur":7703, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212037013, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1654548212037142, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212037238, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1654548212037328, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212037400, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1654548212037516, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212037606, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1654548212037686, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212037767, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654548212037855, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212037960, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654548212038043, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212038122, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654548212038201, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212038276, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654548212038354, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212038429, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654548212038508, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212038595, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654548212038676, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212038750, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654548212038828, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212038903, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654548212038983, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212039055, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654548212039206, "dur":182, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212039389, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654548212039469, "dur":148, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212039618, "dur":1284, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654548212040902, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212040994, "dur":1616, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654548212042611, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212042697, "dur":30050, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654548212072748, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212072835, "dur":46688, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654548212119525, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212119620, "dur":27568, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Mirror.Authenticators.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654548212147189, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212147280, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Plugins/x86_64/steam_api64.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654548212147371, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212147445, "dur":188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":2, "ts":1654548212147634, "dur":1481, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212149117, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1654548212149224, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212151680, "dur":4908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1654548212156666, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":2, "ts":1654548212156744, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212156752, "dur":1406, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":2, "ts":1654548212158230, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1654548212158312, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212158319, "dur":1869, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1654548212160259, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1654548212160336, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212160342, "dur":1096, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1654548212161509, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1654548212161586, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212161592, "dur":1089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1654548212162752, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":2, "ts":1654548212162827, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212162833, "dur":1484, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":2, "ts":1654548212164388, "dur":188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":2, "ts":1654548212164576, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212164648, "dur":885, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":2, "ts":1654548212165534, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212165614, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1654548212165722, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212165729, "dur":4122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1654548212169927, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level2" }}
+,{ "pid":12345, "tid":2, "ts":1654548212170005, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212170011, "dur":1444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level2" }}
+,{ "pid":12345, "tid":2, "ts":1654548212171531, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level0.resS" }}
+,{ "pid":12345, "tid":2, "ts":1654548212171612, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212171618, "dur":1879, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level0.resS" }}
+,{ "pid":12345, "tid":2, "ts":1654548212173571, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1654548212173650, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654548212173657, "dur":63232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1654548212236963, "dur":18776, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212028478, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212028479, "dur":8527, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212037012, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1654548212037134, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212037211, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1654548212037311, "dur":170, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212037483, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654548212037578, "dur":171, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212037750, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654548212037839, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212037928, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654548212038019, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212038101, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654548212038178, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212038251, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654548212038330, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212038411, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654548212038502, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212038585, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654548212038670, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212038745, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654548212038825, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212038900, "dur":322, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654548212039223, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212039333, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654548212039418, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212039498, "dur":57981, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654548212097479, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212097558, "dur":73537, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Mirror.Examples.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654548212171095, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212171182, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level1.resS" }}
+,{ "pid":12345, "tid":3, "ts":1654548212171268, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212171283, "dur":1654, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level1.resS" }}
+,{ "pid":12345, "tid":3, "ts":1654548212173011, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level0" }}
+,{ "pid":12345, "tid":3, "ts":1654548212173094, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654548212173100, "dur":63494, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level0" }}
+,{ "pid":12345, "tid":3, "ts":1654548212236669, "dur":19069, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654548212030099, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654548212030100, "dur":6910, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654548212037012, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1654548212037154, "dur":157, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654548212037312, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1654548212037396, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654548212037490, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654548212037598, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654548212037681, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654548212037760, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654548212037845, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654548212037948, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654548212038032, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654548212038118, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654548212038223, "dur":104977, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654548212143201, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654548212143298, "dur":92350, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654548212235661, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654548212235759, "dur":1384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654548212237219, "dur":18527, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212030907, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212030908, "dur":6097, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212037012, "dur":197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1654548212037209, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212037285, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1654548212037364, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212037434, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":5, "ts":1654548212037524, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212037597, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity.exe" }}
+,{ "pid":12345, "tid":5, "ts":1654548212037758, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212037838, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212037943, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212038020, "dur":178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212038198, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212038272, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212038348, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212038422, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212038510, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212038616, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212038694, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212038767, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212038849, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212038922, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212038999, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212039074, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212039218, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212039306, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212039388, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212039460, "dur":56684, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212096144, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212096227, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212096307, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212096381, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212096461, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212096531, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212096605, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212096674, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212096753, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212096821, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212096891, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212096960, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212097034, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212097130, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212097203, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212097271, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212097343, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212097411, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212097479, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212097548, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212097624, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212097750, "dur":157887, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Mirror.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654548212255639, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654548212255722, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":5, "ts":1654548212255724, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212031740, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212031741, "dur":5385, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212037127, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1654548212037230, "dur":599, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212037831, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212037969, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212038052, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212038139, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212038213, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212038289, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212038361, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212038440, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212038512, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212038607, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212038685, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212038765, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212038851, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212038934, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212039011, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212039092, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212039224, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212039312, "dur":156, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212039469, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212039560, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212039634, "dur":32858, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212072494, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212072605, "dur":946, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212073552, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212073632, "dur":823, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212074455, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212074534, "dur":739, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212075273, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212075350, "dur":19953, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212095303, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212095388, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212095465, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212095536, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212095609, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212095677, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212095750, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212095816, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212095893, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212095961, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212096032, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212096099, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212096171, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212096239, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212096314, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212096382, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212096453, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212096520, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212096592, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212096660, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212096737, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212096805, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212096878, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212096946, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212097016, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212097084, "dur":68914, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/SimpleWebTransport.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654548212165999, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212166130, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/resources.assets" }}
+,{ "pid":12345, "tid":6, "ts":1654548212166214, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212166230, "dur":3141, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/resources.assets" }}
+,{ "pid":12345, "tid":6, "ts":1654548212169447, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level2.resS" }}
+,{ "pid":12345, "tid":6, "ts":1654548212169526, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212169534, "dur":1583, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level2.resS" }}
+,{ "pid":12345, "tid":6, "ts":1654548212171192, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level1" }}
+,{ "pid":12345, "tid":6, "ts":1654548212171272, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212171278, "dur":1939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/level1" }}
+,{ "pid":12345, "tid":6, "ts":1654548212173292, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1654548212173374, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654548212173380, "dur":63526, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1654548212236981, "dur":18764, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212032552, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212032552, "dur":4467, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212037023, "dur":191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1654548212037214, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212037291, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1654548212037390, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212037461, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212037544, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212037628, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212037710, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212037783, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212037869, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212037947, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212038025, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212038109, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212038191, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212038264, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212038340, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212038415, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212038496, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212038571, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212038655, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212038727, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212038801, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212038874, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212038947, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212039020, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212039098, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212039227, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212039319, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212039404, "dur":33393, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212072798, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212072882, "dur":770, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212073653, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212073735, "dur":19819, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212093555, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212093673, "dur":999, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212094672, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212094759, "dur":42120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Telepathy.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212136881, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212136990, "dur":50705, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/kcp2k.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654548212187696, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212187798, "dur":262, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/boot.config" }}
+,{ "pid":12345, "tid":7, "ts":1654548212188061, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654548212188155, "dur":67587, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654548212033368, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654548212033368, "dur":3646, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654548212037017, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1654548212037151, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654548212037269, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1654548212037353, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654548212037430, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":8, "ts":1654548212037510, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654548212037610, "dur":887, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/where-allocations.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654548212038497, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654548212038575, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654548212038660, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654548212038736, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654548212038814, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654548212038888, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654548212038961, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654548212039031, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654548212039106, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654548212039225, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654548212039327, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654548212039406, "dur":74171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654548212113578, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654548212113679, "dur":121972, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Build/Fruit Unity_Data/Managed/Mirror.Components.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654548212235652, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654548212235740, "dur":20004, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654548212261635, "dur":2056, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1654548212273154, "dur": 954, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654548212271954, "dur": 2182, "ph": "X", "name": "Write chrome-trace events", "args": {} },
