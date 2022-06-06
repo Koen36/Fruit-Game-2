@@ -113,6 +113,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -144,11 +146,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7572}
     - Class: 114
-      Script: {instanceID: 8366}
+      Script: {instanceID: 8368}
     - Class: 114
-      Script: {instanceID: 54886}
+      Script: {instanceID: 8622}
     - Class: 114
-      Script: {instanceID: 54980}
+      Script: {instanceID: 8848}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -179,6 +181,8 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
+      Script: {instanceID: 0}
+    - Class: 89
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -219,9 +223,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7894}
     - Class: 114
-      Script: {instanceID: 8192}
+      Script: {instanceID: 8140}
     - Class: 114
-      Script: {instanceID: 53076}
+      Script: {instanceID: 8194}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1597,6 +1601,12 @@ ScriptsOnlyBuild:
     className: Tank
   - hash:
       serializedVersion: 2
+      Hash: de77c8bfdcc17bace5d2d1a49714a41b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerObjectController
+  - hash:
+      serializedVersion: 2
       Hash: 5fdc3c691001157e6a51b430df6e5f8c
     assemblyName: Mirror.Examples.dll
     namespaceName: Mirror.Examples.MultipleAdditiveScenes
@@ -1675,6 +1685,12 @@ ScriptsOnlyBuild:
     className: PhysicsCollision
   - hash:
       serializedVersion: 2
+      Hash: 22972c83fb9559bc0c418ef6589707d6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerListItem
+  - hash:
+      serializedVersion: 2
       Hash: 7b6113efb956a45fe463259b12a0687f
     assemblyName: Mirror.Examples.dll
     namespaceName: Mirror.Examples.Chat
@@ -1747,6 +1763,12 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 7e1d6d77da2d4c45a184909629acbc4b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LobbyController
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1811,24 +1833,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: de77c8bfdcc17bace5d2d1a49714a41b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerObjectController
-  - hash:
-      serializedVersion: 2
-      Hash: 22972c83fb9559bc0c418ef6589707d6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerListItem
-  - hash:
-      serializedVersion: 2
-      Hash: 7e1d6d77da2d4c45a184909629acbc4b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LobbyController
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

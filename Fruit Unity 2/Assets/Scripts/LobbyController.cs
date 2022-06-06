@@ -96,14 +96,8 @@ public class LobbyController : MonoBehaviour
             NewPlayerItem.transform.localScale = Vector3.one;
 
             PlayerListItems.Add(NewPlayerItemScript);
-
-            Debug.Log("HOST");
-            Debug.Log("Name " + player.PlayerName);
-            Debug.Log("ConnectionID " + player.ConnectionID);
-            Debug.Log("PlayerSteamID " + player.PlayerSteamID);
         }
         PlayerItemCreated = true;
-        Debug.Log("HOST CREATED");
     }
 
     public void CreateClientPlayerItem() //If YOU are the CLIENT
@@ -125,14 +119,8 @@ public class LobbyController : MonoBehaviour
                 newPlayerItem.transform.localScale = Vector3.one;
 
                 PlayerListItems.Add(NewPlayerItemScript);
-
-                Debug.Log("CLIENT");
-                Debug.Log("Name " + player.PlayerName);
-                Debug.Log("ConnectionID " + player.ConnectionID);
-                Debug.Log("PlayerSteamID " + player.PlayerSteamID);
             }
         }
-        Debug.Log("CLIENT(S) CREATED");
     }
 
     public void UpdatePlayerItem()
