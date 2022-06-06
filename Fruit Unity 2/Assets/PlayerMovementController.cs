@@ -33,7 +33,7 @@ public class PlayerMovementController : NetworkBehaviour
 
     public void SetPosition() //Spawn player
     {
-        transform.position = new Vector3(Random.Range(-5, 5), 0.8f, Random.Range(-15, 7)); //Random spawn player
+        transform.position = new Vector3(Random.Range(-5, 5), 2.0f, Random.Range(-15, 7)); //Random spawn player
     }
 
     public void Movement()
