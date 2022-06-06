@@ -41,7 +41,7 @@ public class LobbyController : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance = null)
+        if (Instance == null)
         {
             Instance = this;
         }
@@ -83,8 +83,8 @@ public class LobbyController : MonoBehaviour
     {
         foreach(PlayerObjectController player in Manager.GamePlayers)
         {
-            GameObject newPlayerItem = Instantiate(PlayerListItemPrefab) as GameObject;
-            PlayerListItem NewPlayerItemScript = newPlayerItem.GetComponent<PlayerListItem>();
+            GameObject NewPlayerItem = Instantiate(PlayerListItemPrefab) as GameObject;
+            PlayerListItem NewPlayerItemScript = NewPlayerItem.GetComponent<PlayerListItem>();
 
             NewPlayerItemScript.PlayerName = player.PlayerName;
             NewPlayerItemScript.ConnectionID = player.ConnectionID;
@@ -92,12 +92,18 @@ public class LobbyController : MonoBehaviour
             NewPlayerItemScript.SetPlayerValues();
 
 
-            newPlayerItem.transform.SetParent(PlayerListViewContent.transform);
-            newPlayerItem.transform.localScale = Vector3.one;
+            NewPlayerItem.transform.SetParent(PlayerListViewContent.transform);
+            NewPlayerItem.transform.localScale = Vector3.one;
 
             PlayerListItems.Add(NewPlayerItemScript);
+
+            Debug.Log("HOST");
+            Debug.Log("Name " + player.PlayerName);
+            Debug.Log("ConnectionID " + player.ConnectionID);
+            Debug.Log("PlayerSteamID " + player.PlayerSteamID);
         }
         PlayerItemCreated = true;
+        Debug.Log("HOST CREATED");
     }
 
     public void CreateClientPlayerItem() //If YOU are the CLIENT
@@ -119,8 +125,14 @@ public class LobbyController : MonoBehaviour
                 newPlayerItem.transform.localScale = Vector3.one;
 
                 PlayerListItems.Add(NewPlayerItemScript);
+
+                Debug.Log("CLIENT");
+                Debug.Log("Name " + player.PlayerName);
+                Debug.Log("ConnectionID " + player.ConnectionID);
+                Debug.Log("PlayerSteamID " + player.PlayerSteamID);
             }
         }
+        Debug.Log("CLIENT(S) CREATED");
     }
 
     public void UpdatePlayerItem()
