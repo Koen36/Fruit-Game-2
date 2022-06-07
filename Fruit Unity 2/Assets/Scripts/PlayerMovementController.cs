@@ -47,5 +47,7 @@ public class PlayerMovementController : NetworkBehaviour
         Vector3 moveDirection = new Vector3(xDirection, 0.0f, zDirection);
 
         transform.position += moveDirection * Speed;
+
+        Debug.Log(transform.position.ToString());
     }
 }
