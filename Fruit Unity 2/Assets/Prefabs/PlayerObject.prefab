@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 827939002183267249}
   - component: {fileID: 5919710551123360268}
   - component: {fileID: 393036753084612601}
-  - component: {fileID: 5861592638444253199}
   - component: {fileID: 121485363088103662}
+  - component: {fileID: 5861592638444253199}
   - component: {fileID: 2246687381724731331}
   m_Layer: 0
   m_Name: PlayerObject
@@ -73,20 +73,6 @@ MonoBehaviour:
   PlayerSteamID: 0
   PlayerName: 
   Ready: 0
---- !u!136 &5861592638444253199
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827939002183267248}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &121485363088103662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,6 +89,20 @@ MonoBehaviour:
   syncInterval: 0.1
   Speed: 0.1
   PlayerModel: {fileID: 1483126840321770437}
+--- !u!136 &5861592638444253199
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827939002183267248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2246687381724731331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
   syncScale: 0
   interpolatePosition: 1
   interpolateRotation: 1
-  interpolateScale: 0
+  interpolateScale: 1
   bufferTimeMultiplier: 1
   bufferSizeLimit: 64
   catchupThreshold: 4
