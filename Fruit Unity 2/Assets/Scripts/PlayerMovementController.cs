@@ -8,6 +8,7 @@ public class PlayerMovementController : NetworkBehaviour
 {
     public float Speed = 0.1f;
     public GameObject PlayerModel;
+    public Vector3 SpawnPosition;
 
     public void Start()
     {
@@ -36,7 +37,8 @@ public class PlayerMovementController : NetworkBehaviour
 
     public void SetPosition() //Spawn player
     {
-        transform.position = new Vector3(Random.Range(-10, 5), 1.5f, Random.Range(-10, 10)); //Random spawn player
+        SpawnPosition = new Vector3(Random.Range(-10, 10), 1.5f, Random.Range(-10, 10)); //Random spawn player "Random.Range(-10, 10)"
+        transform.position = SpawnPosition;
     }
 
     public void Movement()
@@ -45,9 +47,14 @@ public class PlayerMovementController : NetworkBehaviour
         float zDirection = Input.GetAxis("Vertical");
 
         Vector3 moveDirection = new Vector3(xDirection, 0.0f, zDirection);
+        Debug.Log("MovePos " + moveDirection.ToString());
 
         transform.position += moveDirection * Speed;
+        Debug.Log("NewPos " + transform.position.ToString());
 
-        Debug.Log(transform.position.ToString());
+        if (transform.position.y < 0 || transform.position.y > 100)
+        {
+            transform.position = SpawnPosition;
+        }
     }
 }

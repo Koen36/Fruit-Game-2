@@ -1667,7 +1667,7 @@ ScriptsOnlyBuild:
     className: Tank
   - hash:
       serializedVersion: 2
-      Hash: 37a274472f9a6f01b96ae8a5b2eb58fb
+      Hash: 67f2c12d1e8f9b036fdd465f56b63450
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerObjectController
@@ -1685,7 +1685,7 @@ ScriptsOnlyBuild:
     className: SteamManager
   - hash:
       serializedVersion: 2
-      Hash: 0cf91ca6dc0f6676b1464696fad34a56
+      Hash: 0c0c7c8dd58c8e04c504e56159070cf6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovementController
@@ -1757,7 +1757,7 @@ ScriptsOnlyBuild:
     className: PhysicsCollision
   - hash:
       serializedVersion: 2
-      Hash: c103799824cc7d7d892c3b949de3db07
+      Hash: 4de9d1548cff7026e118976b9cccc9b1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerListItem

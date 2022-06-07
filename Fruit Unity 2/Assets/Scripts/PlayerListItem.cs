@@ -17,6 +17,8 @@ public class PlayerListItem : MonoBehaviour
     public GameObject UnreadyIcon;
     public GameObject ReadyIcon;
     public bool Ready;
+    public GameObject HostIcon;
+    public bool IsHost;
 
     protected Callback<AvatarImageLoaded_t> ImageLoaded;
 
@@ -33,6 +35,11 @@ public class PlayerListItem : MonoBehaviour
             UnreadyIcon.SetActive(true);
         }
     }
+    
+    public void ChangeHostStatus()
+    {
+        HostIcon.SetActive(IsHost);
+    }
 
     private void Start()
     {
@@ -43,6 +50,7 @@ public class PlayerListItem : MonoBehaviour
     {
         PlayerNameText.text = PlayerName;
         ChangeReadyStatus();
+        ChangeHostStatus();
         if (!AvatarReceived) //If avatar is not received
         {
             GetPlayerIcon();

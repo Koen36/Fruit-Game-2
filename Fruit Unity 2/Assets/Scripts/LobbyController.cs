@@ -104,7 +104,14 @@ public class LobbyController : MonoBehaviour
         }
     }
 
-
+    //READY STATUS
+    public void HostPlayer()
+    {
+        if (LocalplayerController.PlayerIdNumber == 1)
+        {
+            LocalplayerController.ChangeHost();
+        }
+    }
 
     //LOBBY
     public void UpdateLobbyName()
@@ -152,6 +159,7 @@ public class LobbyController : MonoBehaviour
             NewPlayerItemScript.ConnectionID = player.ConnectionID;
             NewPlayerItemScript.PlayerSteamID = player.PlayerSteamID;
             NewPlayerItemScript.Ready = player.Ready;
+            NewPlayerItemScript.IsHost = player.IsHost;
             NewPlayerItemScript.SetPlayerValues();
 
 
@@ -176,6 +184,7 @@ public class LobbyController : MonoBehaviour
                 NewPlayerItemScript.ConnectionID = player.ConnectionID;
                 NewPlayerItemScript.PlayerSteamID = player.PlayerSteamID;
                 NewPlayerItemScript.Ready = player.Ready;
+                NewPlayerItemScript.IsHost = player.IsHost;
                 NewPlayerItemScript.SetPlayerValues();
 
 
@@ -197,6 +206,7 @@ public class LobbyController : MonoBehaviour
                 {
                     PlayerListItemScript.PlayerName = player.PlayerName;
                     PlayerListItemScript.Ready = player.Ready;
+                    PlayerListItemScript.IsHost = player.IsHost;
                     PlayerListItemScript.SetPlayerValues();
                     if (player == LocalplayerController) //If PLAYER is LOCAL
                     {

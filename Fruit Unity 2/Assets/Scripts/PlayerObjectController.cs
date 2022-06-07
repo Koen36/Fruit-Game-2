@@ -12,6 +12,7 @@ public class PlayerObjectController : NetworkBehaviour
     [SyncVar] public ulong PlayerSteamID;
     [SyncVar(hook = nameof(PlayerNameUpdate))] public string PlayerName; //Whenever string changes, function will be called
     [SyncVar(hook = nameof(PlayerReadyUpdate))] public bool Ready;
+    [SyncVar(hook = nameof(PlayerHostUpdate))] public bool IsHost;
 
     //Manager
     private CustomNetworkManager manager;
@@ -42,6 +43,8 @@ public class PlayerObjectController : NetworkBehaviour
         gameObject.name = "LocalGamePlayer";
         LobbyController.Instance.FindLocalPlayer();
         LobbyController.Instance.UpdateLobbyName();
+
+        LobbyController.Instance.HostPlayer(); //Checks if someone is Host
     }
 
     public override void OnStartClient()
@@ -104,6 +107,35 @@ public class PlayerObjectController : NetworkBehaviour
             CmdSetPlayerReady();
         }
     }
+
+
+    //HOST STATUS
+    [Command]
+    private void CmdSetPlayerHost()
+    {
+        this.PlayerHostUpdate(this.IsHost, !IsHost);
+    }
+
+    public void PlayerHostUpdate(bool OldValue, bool NewValue)
+    {
+        if (isServer) //If YOU are the HOST
+        {
+            this.IsHost = NewValue;
+        }
+        if (isClient) //If YOU are the CLIENT
+        {
+            LobbyController.Instance.UpdatePlayerList();
+        }
+    }
+
+    public void ChangeHost()
+    {
+        if (hasAuthority)
+        {
+            CmdSetPlayerHost();
+        }
+    }
+
 
 
     //START GAME
