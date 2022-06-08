@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovementController : NetworkBehaviour
 {
-    public float Speed = 0.1f;
+    public float Speed = 10f;
     public GameObject PlayerModel;
     public Vector3 SpawnPosition;
 
@@ -49,7 +49,7 @@ public class PlayerMovementController : NetworkBehaviour
         Vector3 moveDirection = new Vector3(xDirection, 0.0f, zDirection);
         //Debug.Log("MovePos " + moveDirection.ToString());
 
-        transform.position += moveDirection * Speed;
+        transform.position += moveDirection * Speed * Time.deltaTime;
         //Debug.Log("NewPos " + transform.position.ToString());
 
         if (transform.position.y < 0 || transform.position.y > 100)

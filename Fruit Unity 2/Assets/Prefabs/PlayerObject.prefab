@@ -73,6 +73,8 @@ MonoBehaviour:
   PlayerSteamID: 0
   PlayerName: 
   Ready: 0
+  IsHost: 0
+  manager: {fileID: 0}
 --- !u!114 &121485363088103662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,8 +89,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  Speed: 0.1
+  Speed: 20
   PlayerModel: {fileID: 1483126840321770437}
+  SpawnPosition: {x: 0, y: 0, z: 0}
 --- !u!136 &5861592638444253199
 CapsuleCollider:
   m_ObjectHideFlags: 0
