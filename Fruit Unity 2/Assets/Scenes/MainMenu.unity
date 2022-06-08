@@ -4800,8 +4800,6 @@ MonoBehaviour:
   lobbiesMenu: {fileID: 6685448415798534482}
   lobbyDataItemPrefab: {fileID: 4079474610730712436, guid: f563bd6aa3b7eab4f9fdc7a15da5df6b, type: 3}
   lobbyListContent: {fileID: 6685448416094522750}
-  lobbiesButton: {fileID: 2250191421968091637}
-  hostButton: {fileID: 1843340323}
   listOfLobbies: []
 --- !u!4 &1680566408
 Transform:
@@ -8239,13 +8237,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 6685448416094522751}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
-  m_Elasticity: 0.1
-  m_Inertia: 1
-  m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_Elasticity: 0.5
+  m_Inertia: 0
+  m_DecelerationRate: 1
+  m_ScrollSensitivity: 30
   m_Viewport: {fileID: 6685448416755833975}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 6685448416456019111}

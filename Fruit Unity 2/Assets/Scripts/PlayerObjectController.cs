@@ -15,9 +15,9 @@ public class PlayerObjectController : NetworkBehaviour
     [SyncVar(hook = nameof(PlayerHostUpdate))] public bool IsHost;
 
     //Manager
-    private CustomNetworkManager manager;
+    public CustomNetworkManager manager;
 
-    private CustomNetworkManager Manager
+    public CustomNetworkManager Manager
     {
         get
         {
@@ -149,6 +149,26 @@ public class PlayerObjectController : NetworkBehaviour
         if (hasAuthority)
         {
             CmdCanStartGame(SceneName);
+        }
+    }
+
+
+    //DESTROY
+    [Command]
+    public void CmdDestroyInfo()
+    {
+        this.ConnectionID = 0;
+        this.PlayerIdNumber = 0;
+        this.PlayerSteamID = 0;
+        this.PlayerName = "";
+        this.Ready = false;
+        this.IsHost = false;
+    }
+    public void DestroyInfo()
+    {
+        if (hasAuthority)
+        {
+            CmdDestroyInfo();
         }
     }
 }

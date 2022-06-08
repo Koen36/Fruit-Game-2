@@ -265,9 +265,9 @@ public class LobbyController : MonoBehaviour
         //Instantiate(NetworkManagerPrefab);
 
         SteamLobby.Instance.LeaveLobby();
-        Destroy(LocalPlayerObject);
-        
+        LocalplayerController.DestroyInfo();
 
         SceneManager.LoadScene("MainMenu");
+
     }
 }

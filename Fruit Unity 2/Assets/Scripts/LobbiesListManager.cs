@@ -13,8 +13,6 @@ public class LobbiesListManager : MonoBehaviour
     public GameObject lobbyDataItemPrefab;
     public GameObject lobbyListContent;
 
-    public GameObject lobbiesButton, hostButton;
-
     public List<GameObject> listOfLobbies = new List<GameObject>();
 
 
@@ -28,9 +26,6 @@ public class LobbiesListManager : MonoBehaviour
 
     public void GetListOfLobbies()
     {
-        lobbiesButton.SetActive(false);
-        hostButton.SetActive(false);
-
         onlineMenu.SetActive(false);
         lobbiesMenu.SetActive(true);
 

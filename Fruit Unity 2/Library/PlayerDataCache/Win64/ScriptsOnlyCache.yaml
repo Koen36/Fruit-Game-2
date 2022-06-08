@@ -223,23 +223,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7098}
     - Class: 114
-      Script: {instanceID: 7574}
+      Script: {instanceID: 7576}
     - Class: 114
-      Script: {instanceID: 7896}
+      Script: {instanceID: 7898}
     - Class: 114
-      Script: {instanceID: 8142}
+      Script: {instanceID: 8144}
     - Class: 114
-      Script: {instanceID: 8196}
+      Script: {instanceID: 8198}
     - Class: 114
-      Script: {instanceID: 8226}
+      Script: {instanceID: 8228}
     - Class: 114
-      Script: {instanceID: 8372}
+      Script: {instanceID: 8374}
     - Class: 114
-      Script: {instanceID: 8574}
+      Script: {instanceID: 8576}
     - Class: 114
-      Script: {instanceID: 8626}
+      Script: {instanceID: 8628}
     - Class: 114
-      Script: {instanceID: 8852}
+      Script: {instanceID: 8854}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -326,23 +326,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7098}
     - Class: 114
-      Script: {instanceID: 7574}
+      Script: {instanceID: 7252}
     - Class: 114
-      Script: {instanceID: 7896}
+      Script: {instanceID: 7576}
     - Class: 114
-      Script: {instanceID: 8142}
+      Script: {instanceID: 7898}
     - Class: 114
-      Script: {instanceID: 8196}
+      Script: {instanceID: 8144}
     - Class: 114
-      Script: {instanceID: 8226}
+      Script: {instanceID: 8198}
     - Class: 114
-      Script: {instanceID: 8372}
+      Script: {instanceID: 8228}
     - Class: 114
-      Script: {instanceID: 8574}
+      Script: {instanceID: 8374}
     - Class: 114
-      Script: {instanceID: 34352}
+      Script: {instanceID: 8576}
     - Class: 114
-      Script: {instanceID: 34602}
+      Script: {instanceID: 9300}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1540,6 +1540,12 @@ ScriptsOnlyBuild:
     className: DistanceInterestManagementCustomRange
   - hash:
       serializedVersion: 2
+      Hash: ef3aefd429010069a9ed7ae564ad32b7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LobbiesListManager
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1726,7 +1732,7 @@ ScriptsOnlyBuild:
     className: Tank
   - hash:
       serializedVersion: 2
-      Hash: 67f2c12d1e8f9b036fdd465f56b63450
+      Hash: 884713855b877ad425c69cc2bf4a8e01
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerObjectController
@@ -1960,22 +1966,16 @@ ScriptsOnlyBuild:
     className: NetworkRoomPlayerExt
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Unity.VisualScripting.Core.dll
-    namespaceName: Unity.VisualScripting
-    className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
       Hash: b226110a32e2a3039b5ba3e4962e1033
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LobbyDataEntry
   - hash:
       serializedVersion: 2
-      Hash: b6642d724b497e1f59120e7aa2813fa4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LobbiesListManager
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.VisualScripting.Core.dll
+    namespaceName: Unity.VisualScripting
+    className: UnityOnSliderValueChangedMessageListener
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

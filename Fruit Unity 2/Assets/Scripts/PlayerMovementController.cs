@@ -47,10 +47,10 @@ public class PlayerMovementController : NetworkBehaviour
         float zDirection = Input.GetAxis("Vertical");
 
         Vector3 moveDirection = new Vector3(xDirection, 0.0f, zDirection);
-        Debug.Log("MovePos " + moveDirection.ToString());
+        //Debug.Log("MovePos " + moveDirection.ToString());
 
         transform.position += moveDirection * Speed;
-        Debug.Log("NewPos " + transform.position.ToString());
+        //Debug.Log("NewPos " + transform.position.ToString());
 
         if (transform.position.y < 0 || transform.position.y > 100)
         {
