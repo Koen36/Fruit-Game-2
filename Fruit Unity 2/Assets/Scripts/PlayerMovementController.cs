@@ -6,9 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovementController : NetworkBehaviour
 {
-    public float Speed = 10f;
+    public float Speed = 12f;
+    float ActualSpeed;
+    public float JumpForce = 200f;
+    public float mouseSensitivity = 100f;
+    float xRotation = 0f;
+
     public GameObject PlayerModel;
+    public GameObject Camera;
+    public Rigidbody PlayerRigid;
+
     public Vector3 SpawnPosition;
+    public Vector3 Velocity;
+
 
     public void Start()
     {
@@ -24,13 +34,18 @@ public class PlayerMovementController : NetworkBehaviour
                 SetPosition();
                 Debug.Log("Player spawned");
 
+                GameObject.Find("Main Camera").SetActive(false);
+
                 PlayerModel.SetActive(true);
                 Debug.Log("Forest PlayerModel enabled");
+
+                Cursor.lockState = CursorLockMode.Locked; //Lock cursor inside window
             }
 
             if (hasAuthority) //Only things that you have authority over and you want to control
             {
                 Movement();
+                Rotate();
             }
         }
     }
@@ -40,21 +55,54 @@ public class PlayerMovementController : NetworkBehaviour
         SpawnPosition = new Vector3(Random.Range(-10, 10), 1.5f, Random.Range(-10, 10)); //Random spawn player "Random.Range(-10, 10)"
         transform.position = SpawnPosition;
     }
-
+    
     public void Movement()
     {
-        float xDirection = Input.GetAxis("Horizontal");
-        float zDirection = Input.GetAxis("Vertical");
+        Run();
 
-        Vector3 moveDirection = new Vector3(xDirection, 0.0f, zDirection);
-        //Debug.Log("MovePos " + moveDirection.ToString());
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
 
-        transform.position += moveDirection * Speed * Time.deltaTime;
-        //Debug.Log("NewPos " + transform.position.ToString());
+        transform.position += (transform.right * x + transform.forward * z) * Time.deltaTime * ActualSpeed;
 
-        if (transform.position.y < 0 || transform.position.y > 100)
+        Jump();
+
+        if (transform.position.y < -10 || transform.position.y > 100)
         {
             transform.position = SpawnPosition;
         }
-    }
+    } //Move player
+
+    public void Run()
+    {
+        if (Input.GetKey("left shift"))
+        {
+            ActualSpeed = Speed * 1.5f;
+        }
+        else
+        {
+            ActualSpeed = Speed;
+        }
+    } //Lets player run
+
+    public void Jump()
+    {
+        if (Input.GetKeyDown("space") & PlayerRigid.velocity.y == 0)
+        {
+            PlayerRigid.AddForce(transform.up * JumpForce);
+        }
+    } //Lets player jump
+
+    public void Rotate()
+    {
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        Camera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+
+        transform.Rotate(Vector3.up * mouseX);
+
+    } //Rotate player
 }
