@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using Mirror;
 using Steamworks;
 using System.Linq;
@@ -10,6 +11,8 @@ using TMPro;
 public class LobbyController : MonoBehaviour
 {
     public static LobbyController Instance;
+
+    public GameObject NetworkManagerPrefab;
 
     //UI Elements
     public TextMeshProUGUI LobbyNameText;
@@ -247,5 +250,24 @@ public class LobbyController : MonoBehaviour
     public void StartGame(string SceneName)
     {
         LocalplayerController.CanStartGame(SceneName);
+    }
+
+
+    //QUIT LOBBY
+    public void QuitLobby()
+    {
+        //Destroy(SteamLobby.Instance);
+        //Destroy(LocalPlayerObject);
+
+        //SteamLobby.Instance.ReloadSteam();
+
+        //Destroy(GameObject.Find("NetworkManager"));
+        //Instantiate(NetworkManagerPrefab);
+
+        SteamLobby.Instance.LeaveLobby();
+        Destroy(LocalPlayerObject);
+        
+
+        SceneManager.LoadScene("MainMenu");
     }
 }

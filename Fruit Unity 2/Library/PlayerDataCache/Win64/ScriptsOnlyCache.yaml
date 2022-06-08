@@ -2,7 +2,9 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CustomNetworkManager
+    - LobbiesListManager
     - LobbyController
+    - LobbyDataEntry
     - PlayerListItem
     - PlayerMovementController
     - PlayerObjectController
@@ -41,6 +43,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
+    Mirror:
+    - Steamworks.CSteamID
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
     - TMPro.FontAssetCreationSettings
@@ -76,6 +80,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Scrollbar/ScrollEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: LobbyDataEntry
+    methodName: JoinLobby
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -100,6 +107,15 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: SteamLobby
     methodName: HostLobby
+  - assembly: Assembly-CSharp
+    fullTypeName: LobbiesListManager
+    methodName: GetListOfLobbies
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -109,6 +125,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: LobbyController
     methodName: StartGame
+  - assembly: Assembly-CSharp
+    fullTypeName: LobbyController
+    methodName: QuitLobby
   - assembly: Assembly-CSharp
     fullTypeName: LobbyController
     methodName: ReadyPlayer
@@ -155,7 +174,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
@@ -178,7 +203,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3646}
     - Class: 114
+      Script: {instanceID: 3700}
+    - Class: 114
+      Script: {instanceID: 3856}
+    - Class: 114
       Script: {instanceID: 4374}
+    - Class: 114
+      Script: {instanceID: 4932}
     - Class: 114
       Script: {instanceID: 5830}
     - Class: 114
@@ -186,13 +217,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6682}
     - Class: 114
+      Script: {instanceID: 6748}
+    - Class: 114
       Script: {instanceID: 7086}
     - Class: 114
       Script: {instanceID: 7098}
     - Class: 114
       Script: {instanceID: 7574}
     - Class: 114
+      Script: {instanceID: 7896}
+    - Class: 114
+      Script: {instanceID: 8142}
+    - Class: 114
+      Script: {instanceID: 8196}
+    - Class: 114
+      Script: {instanceID: 8226}
+    - Class: 114
       Script: {instanceID: 8372}
+    - Class: 114
+      Script: {instanceID: 8574}
     - Class: 114
       Script: {instanceID: 8626}
     - Class: 114
@@ -200,6 +243,8 @@ ScriptsOnlyBuild:
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -253,9 +298,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3414}
     - Class: 114
+      Script: {instanceID: 3646}
+    - Class: 114
       Script: {instanceID: 3700}
     - Class: 114
       Script: {instanceID: 3856}
+    - Class: 114
+      Script: {instanceID: 4374}
     - Class: 114
       Script: {instanceID: 4528}
     - Class: 114
@@ -275,6 +324,10 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7086}
     - Class: 114
+      Script: {instanceID: 7098}
+    - Class: 114
+      Script: {instanceID: 7574}
+    - Class: 114
       Script: {instanceID: 7896}
     - Class: 114
       Script: {instanceID: 8142}
@@ -283,7 +336,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8226}
     - Class: 114
+      Script: {instanceID: 8372}
+    - Class: 114
       Script: {instanceID: 8574}
+    - Class: 114
+      Script: {instanceID: 34352}
+    - Class: 114
+      Script: {instanceID: 34602}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1373,7 +1432,7 @@ ScriptsOnlyBuild:
     className: NetworkStartPosition
   - hash:
       serializedVersion: 2
-      Hash: cab36b7ef8cfacf16e50c841b2798fe1
+      Hash: 2c4c4ae90b9ef16ae805e9087f5dbf8e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SteamLobby
@@ -1835,7 +1894,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 1a4cee429a76739d828ee1f8a049d722
+      Hash: 8281b397fd121a37fc11ff5aa1fc79a8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LobbyController
@@ -1905,6 +1964,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: b226110a32e2a3039b5ba3e4962e1033
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LobbyDataEntry
+  - hash:
+      serializedVersion: 2
+      Hash: b6642d724b497e1f59120e7aa2813fa4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LobbiesListManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

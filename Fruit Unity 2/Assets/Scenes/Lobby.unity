@@ -1693,7 +1693,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 430230681}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1716414852}
+        m_TargetAssemblyTypeName: LobbyController, Assembly-CSharp
+        m_MethodName: QuitLobby
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &430230681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4807,6 +4819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a48b1b311efc7848ac4feabd7001e16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NetworkManagerPrefab: {fileID: 926476927879769328, guid: 4febf010cdc5fcc4b913bf536cdad9c0, type: 3}
   LobbyNameText: {fileID: 663259517}
   PlayerListViewContent: {fileID: 162985424}
   PlayerListItemPrefab: {fileID: 8536319924627425724, guid: 7248191ef5379a640ad487d96f030996, type: 3}

@@ -139,17 +139,16 @@ public class PlayerObjectController : NetworkBehaviour
 
 
     //START GAME
+    [Command]
+    public void CmdCanStartGame(string SceneName)
+    {
+        manager.StartGame(SceneName);
+    }
     public void CanStartGame(string SceneName)
     {
         if (hasAuthority)
         {
             CmdCanStartGame(SceneName);
         }
-    }
-
-    [Command]
-    public void CmdCanStartGame(string SceneName)
-    {
-        manager.StartGame(SceneName);
     }
 }

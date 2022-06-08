@@ -4,7 +4,6 @@ using UnityEngine;
 using Mirror;
 using Steamworks;
 using UnityEngine.UI;
-using TMPro;
 
 public class SteamLobby : MonoBehaviour
 {
@@ -14,6 +13,13 @@ public class SteamLobby : MonoBehaviour
     protected Callback<LobbyCreated_t> LobbyCreated;
     protected Callback<GameLobbyJoinRequested_t> JoinRequest;
     protected Callback<LobbyEnter_t> LobbyEntered;
+
+    //Callbacks Lobbies
+    protected Callback<LobbyMatchList_t> LobbyList;
+    protected Callback<LobbyDataUpdate_t> LobbyDataUpdated;
+
+    public List<CSteamID> lobbyIDs = new List<CSteamID>();
+
 
     //Variables
     public ulong CurrentLobbyID;
@@ -39,6 +45,9 @@ public class SteamLobby : MonoBehaviour
         LobbyCreated = Callback<LobbyCreated_t>.Create(OnLobbyCreated);
         JoinRequest = Callback<GameLobbyJoinRequested_t>.Create(OnJoinRequest);
         LobbyEntered = Callback<LobbyEnter_t>.Create(OnLobbyEntered);
+
+        LobbyList = Callback<LobbyMatchList_t>.Create(OnGetLobbyList);
+        LobbyDataUpdated = Callback<LobbyDataUpdate_t>.Create(OnGetLobbyData);
     }
 
     public void HostLobby()
@@ -81,5 +90,69 @@ public class SteamLobby : MonoBehaviour
         manager.StartClient();
 
         //Only Host
+    }
+
+
+
+    public void LeaveLobby()
+    {
+        SteamMatchmaking.LeaveLobby((CSteamID)CurrentLobbyID);
+        CurrentLobbyID = 0;
+
+        //Disposing callbacks
+        LobbyCreated.Dispose();
+        JoinRequest.Dispose();
+        LobbyEntered.Dispose();
+
+        LobbyList.Dispose();
+        LobbyDataUpdated.Dispose();
+
+        //Initiating callbacks (again)
+        LobbyCreated = Callback<LobbyCreated_t>.Create(OnLobbyCreated);
+        JoinRequest = Callback<GameLobbyJoinRequested_t>.Create(OnJoinRequest);
+        LobbyEntered = Callback<LobbyEnter_t>.Create(OnLobbyEntered);
+
+        LobbyList = Callback<LobbyMatchList_t>.Create(OnGetLobbyList);
+        LobbyDataUpdated = Callback<LobbyDataUpdate_t>.Create(OnGetLobbyData);
+    } //When you leave a lobby
+
+
+
+    public void JoinLobby(CSteamID lobbyID)
+    {
+        SteamMatchmaking.JoinLobby(lobbyID);
+    } //When you join a lobby
+
+
+
+    public void GetLobbiesList()
+    {
+        if (lobbyIDs.Count > 0) //Makes sure there are no duplicates
+        {
+            lobbyIDs.Clear();
+        }
+
+        SteamMatchmaking.AddRequestLobbyListDistanceFilter(ELobbyDistanceFilter.k_ELobbyDistanceFilterClose); //Returns lobbies in same region
+        SteamMatchmaking.RequestLobbyList();
+    }
+
+    void OnGetLobbyList(LobbyMatchList_t result)
+    {
+        if (LobbiesListManager.Instance.listOfLobbies.Count > 0) //Destroy duplicates
+        {
+            LobbiesListManager.Instance.DestroyLobbies();
+        }
+
+        for (int i=0; i < result.m_nLobbiesMatching; i++) //Adds all CSteamID lobbyIDs to list lobbyIDs
+        {
+            CSteamID lobbyID = SteamMatchmaking.GetLobbyByIndex(i);
+            lobbyIDs.Add(lobbyID);
+            SteamMatchmaking.RequestLobbyData(lobbyID);
+        }
+    }
+
+    void OnGetLobbyData(LobbyDataUpdate_t result)
+    {
+        LobbiesListManager.Instance.DisplayLobbies(lobbyIDs, result);
     }
 }
