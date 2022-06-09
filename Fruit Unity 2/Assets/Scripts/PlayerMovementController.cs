@@ -15,6 +15,7 @@ public class PlayerMovementController : NetworkBehaviour
     public GameObject PlayerModel;
     public GameObject Camera;
     GameObject MainCamera;
+    GameObject LocalPlayer;
     public Rigidbody PlayerRigid;
 
     public Vector3 SpawnPosition;
@@ -37,9 +38,10 @@ public class PlayerMovementController : NetworkBehaviour
                 Debug.Log("Player spawned");
 
                 MainCamera = GameObject.Find("Main Camera");
+                LocalPlayer = GameObject.Find("LocalGamePlayer");
                 //MainCamera.SetActive(false);
 
-                MainCamera.transform.SetParent(PlayerModel.transform); //Sets object inside the content
+                MainCamera.transform.SetParent(LocalPlayer.transform); //Sets object inside the content
                 MainCamera.transform.localPosition = new Vector3 (0f,0.6f,0f); //Scale the object (back) to 1
 
                 PlayerModel.SetActive(true);
