@@ -14,6 +14,7 @@ public class PlayerMovementController : NetworkBehaviour
 
     public GameObject PlayerModel;
     public GameObject Camera;
+    GameObject MainCamera;
     public Rigidbody PlayerRigid;
 
     public Vector3 SpawnPosition;
@@ -23,6 +24,7 @@ public class PlayerMovementController : NetworkBehaviour
     public void Start()
     {
         PlayerModel.SetActive(false);
+        Camera.SetActive(false);
     }
 
     public void Update()
@@ -34,7 +36,11 @@ public class PlayerMovementController : NetworkBehaviour
                 SetPosition();
                 Debug.Log("Player spawned");
 
-                GameObject.Find("Main Camera").SetActive(false);
+                MainCamera = GameObject.Find("Main Camera");
+                //MainCamera.SetActive(false);
+
+                MainCamera.transform.SetParent(PlayerModel.transform); //Sets object inside the content
+                MainCamera.transform.localPosition = new Vector3 (0f,0.6f,0f); //Scale the object (back) to 1
 
                 PlayerModel.SetActive(true);
                 Debug.Log("Forest PlayerModel enabled");
@@ -100,7 +106,7 @@ public class PlayerMovementController : NetworkBehaviour
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-        Camera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        MainCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
         transform.Rotate(Vector3.up * mouseX);
 
