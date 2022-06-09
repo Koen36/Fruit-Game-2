@@ -15,7 +15,7 @@ C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Fruit Unity 2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51591
+56115
 Successfully changed project path to: C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Fruit Unity 2
 C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Fruit Unity 2
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/Koen/Documents/GitHub/Fruit-Game-2/Fruit Unity 2
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 343.41 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 355.34 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.3f1 (af2e63e8f9bd)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -63,92 +63,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56292
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56688
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.024131 seconds.
+Registered in 0.023617 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 329.43 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 338.28 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.272 seconds
+- Completed reload, in  1.262 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1272ms)
-		BeginReloadAssembly (158ms)
+	ReloadAssembly (1262ms)
+		BeginReloadAssembly (133ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (917ms)
-			LoadAssemblies (153ms)
+		EndReloadAssembly (930ms)
+			LoadAssemblies (127ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (154ms)
+			SetupTypeCache (152ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (634ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (650ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (18ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (330ms)
+				RefreshPlugins (338ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (216ms)
-				ProcessInitializeOnLoadMethodAttributes (67ms)
+				ProcessInitializeOnLoadAttributes (223ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.018598 seconds.
+Registered in 0.018807 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Koen\Documents\GitHub\Fruit-Game-2\Fruit Unity 2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Koen\Documents\GitHub\Fruit-Game-2\Fruit Unity 2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.99 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.03 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  1.897 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1899ms)
-		BeginReloadAssembly (185ms)
+	ReloadAssembly (1898ms)
+		BeginReloadAssembly (193ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (1516ms)
-			LoadAssemblies (157ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (1508ms)
+			LoadAssemblies (156ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (405ms)
+			SetupTypeCache (409ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (88ms)
-			SetupLoadedEditorAssemblies (814ms)
+			RebuildScriptCaches (85ms)
+			SetupLoadedEditorAssemblies (812ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (14ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (329ms)
-				ProcessInitializeOnLoadAttributes (384ms)
-				ProcessInitializeOnLoadMethodAttributes (63ms)
-				AfterProcessingInitializeOnLoad (22ms)
+				ProcessInitializeOnLoadAttributes (382ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
+				AfterProcessingInitializeOnLoad (23ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
-Refreshing native plugins compatible for Editor in 0.95 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.20 seconds
+Refreshing native plugins compatible for Editor in 0.85 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3862 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 36 unused Assets / (112.4 KB). Loaded Objects now: 4311.
 Memory consumption went from 134.9 MB to 134.8 MB.
-Total: 4.590500 ms (FindLiveObjects: 0.403600 ms CreateObjectMapping: 0.216900 ms MarkObjects: 3.835800 ms  DeleteObjects: 0.132100 ms)
+Total: 4.308500 ms (FindLiveObjects: 0.380200 ms CreateObjectMapping: 0.192400 ms MarkObjects: 3.598100 ms  DeleteObjects: 0.136100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -162,56 +162,119 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 21113.610277 seconds.
-  path: Assets/Prefabs/PlayerObject.prefab
-  artifactKey: Guid(04ef07cfa0fedaf46821cbf99b4fcd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PlayerObject.prefab using Guid(04ef07cfa0fedaf46821cbf99b4fcd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79f3350dca5addc47460d968d55b154d') in 0.183978 seconds 
+  Time since last request: 523.063856 seconds.
+  path: Assets/Scripts/PlayerMovementController.cs
+  artifactKey: Guid(74e6bf217f6a0f442a381ce81ea558c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovementController.cs using Guid(74e6bf217f6a0f442a381ce81ea558c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e8cabe3de3d932d33a1e132ba411739') in 0.044080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.490960 seconds.
+  path: Assets/Scripts/PlayerMovementController.cs
+  artifactKey: Guid(74e6bf217f6a0f442a381ce81ea558c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovementController.cs using Guid(74e6bf217f6a0f442a381ce81ea558c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d60e3933a596cf9b83ab881a1f3005') in 0.003506 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.017816 seconds.
+Registered in 0.018243 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Koen\Documents\GitHub\Fruit-Game-2\Fruit Unity 2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Koen\Documents\GitHub\Fruit-Game-2\Fruit Unity 2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.84 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.700 seconds
+- Completed reload, in  1.715 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1700ms)
-		BeginReloadAssembly (220ms)
+	ReloadAssembly (1716ms)
+		BeginReloadAssembly (221ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (53ms)
-		EndReloadAssembly (1316ms)
-			LoadAssemblies (157ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1329ms)
+			LoadAssemblies (159ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (395ms)
+			SetupTypeCache (412ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (67ms)
-			SetupLoadedEditorAssemblies (644ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (645ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (214ms)
+				ProcessInitializeOnLoadAttributes (324ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
+				AfterProcessingInitializeOnLoad (23ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.36 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3844 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (79.2 KB). Loaded Objects now: 4314.
+Memory consumption went from 133.5 MB to 133.4 MB.
+Total: 3.956300 ms (FindLiveObjects: 0.337500 ms CreateObjectMapping: 0.168100 ms MarkObjects: 3.336800 ms  DeleteObjects: 0.112500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017800 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Koen\Documents\GitHub\Fruit-Game-2\Fruit Unity 2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Koen\Documents\GitHub\Fruit-Game-2\Fruit Unity 2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.797 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1798ms)
+		BeginReloadAssembly (220ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1407ms)
+			LoadAssemblies (166ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (450ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (668ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (25ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (215ms)
-				ProcessInitializeOnLoadAttributes (319ms)
+				BeforeProcessingInitializeOnLoad (224ms)
+				ProcessInitializeOnLoadAttributes (334ms)
 				ProcessInitializeOnLoadMethodAttributes (60ms)
 				AfterProcessingInitializeOnLoad (23ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.39 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 5.54 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3844 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 29 unused Assets / (79.3 KB). Loaded Objects now: 4322.
-Memory consumption went from 137.9 MB to 137.8 MB.
-Total: 4.533200 ms (FindLiveObjects: 0.453700 ms CreateObjectMapping: 0.245400 ms MarkObjects: 3.716100 ms  DeleteObjects: 0.116200 ms)
+Unloading 29 unused Assets / (79.2 KB). Loaded Objects now: 4317.
+Memory consumption went from 133.5 MB to 133.5 MB.
+Total: 4.034700 ms (FindLiveObjects: 0.342700 ms CreateObjectMapping: 0.229400 ms MarkObjects: 3.342000 ms  DeleteObjects: 0.119100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -225,50 +288,87 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
+Refreshing native plugins compatible for Editor in 11.11 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (77.6 KB). Loaded Objects now: 4317.
+Memory consumption went from 56.8 MB to 56.7 MB.
+Total: 4.267800 ms (FindLiveObjects: 0.367700 ms CreateObjectMapping: 0.165100 ms MarkObjects: 3.619000 ms  DeleteObjects: 0.115000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 331.203743 seconds.
+  path: Assets/Scripts/PlayerListItem.cs
+  artifactKey: Guid(d25fef5c55f6c3240b131424c419a191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerListItem.cs using Guid(d25fef5c55f6c3240b131424c419a191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b23be70a6496603e8c241649b0155a5') in 0.010247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.130739 seconds.
+  path: Assets/Prefabs/PlayerObject.prefab
+  artifactKey: Guid(04ef07cfa0fedaf46821cbf99b4fcd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PlayerObject.prefab using Guid(04ef07cfa0fedaf46821cbf99b4fcd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a2ca52564302b93d5f9310a530c26b0') in 0.169168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.898189 seconds.
+  path: Assets/Prefabs/PlayerObject.prefab
+  artifactKey: Guid(04ef07cfa0fedaf46821cbf99b4fcd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PlayerObject.prefab using Guid(04ef07cfa0fedaf46821cbf99b4fcd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5389e1cd2fcb6a9f7f1d5f6c40eac05') in 0.014179 seconds 
+========================================================================
+Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.017676 seconds.
+Registered in 0.018530 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Koen\Documents\GitHub\Fruit-Game-2\Fruit Unity 2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Koen\Documents\GitHub\Fruit-Game-2\Fruit Unity 2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.02 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.720 seconds
+- Completed reload, in  1.740 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1721ms)
-		BeginReloadAssembly (215ms)
+	ReloadAssembly (1741ms)
+		BeginReloadAssembly (222ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (1337ms)
-			LoadAssemblies (159ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1347ms)
+			LoadAssemblies (165ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (404ms)
-			ReleaseScriptCaches (2ms)
+			SetupTypeCache (400ms)
+			ReleaseScriptCaches (3ms)
 			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (653ms)
+			SetupLoadedEditorAssemblies (665ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (25ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (218ms)
-				ProcessInitializeOnLoadAttributes (324ms)
-				ProcessInitializeOnLoadMethodAttributes (62ms)
+				BeforeProcessingInitializeOnLoad (220ms)
+				ProcessInitializeOnLoadAttributes (335ms)
+				ProcessInitializeOnLoadMethodAttributes (60ms)
 				AfterProcessingInitializeOnLoad (23ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.43 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 5.54 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3844 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 29 unused Assets / (80.4 KB). Loaded Objects now: 4325.
-Memory consumption went from 137.9 MB to 137.8 MB.
-Total: 3.972200 ms (FindLiveObjects: 0.354000 ms CreateObjectMapping: 0.175700 ms MarkObjects: 3.336100 ms  DeleteObjects: 0.104700 ms)
+Unloading 29 unused Assets / (79.3 KB). Loaded Objects now: 4328.
+Memory consumption went from 137.9 MB to 137.9 MB.
+Total: 4.140100 ms (FindLiveObjects: 0.354400 ms CreateObjectMapping: 0.173500 ms MarkObjects: 3.499200 ms  DeleteObjects: 0.111300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -283,106 +383,49 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.017604 seconds.
+Registered in 0.017482 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Koen\Documents\GitHub\Fruit-Game-2\Fruit Unity 2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Koen\Documents\GitHub\Fruit-Game-2\Fruit Unity 2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.86 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.699 seconds
+- Completed reload, in  1.738 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1700ms)
-		BeginReloadAssembly (215ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (1317ms)
-			LoadAssemblies (156ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (391ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (653ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (25ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (218ms)
-				ProcessInitializeOnLoadAttributes (325ms)
-				ProcessInitializeOnLoadMethodAttributes (59ms)
-				AfterProcessingInitializeOnLoad (24ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.30 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3844 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 29 unused Assets / (79.4 KB). Loaded Objects now: 4328.
-Memory consumption went from 137.9 MB to 137.8 MB.
-Total: 3.954800 ms (FindLiveObjects: 0.341900 ms CreateObjectMapping: 0.169400 ms MarkObjects: 3.335200 ms  DeleteObjects: 0.106900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.017399 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Koen\Documents\GitHub\Fruit-Game-2\Fruit Unity 2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Koen\Documents\GitHub\Fruit-Game-2\Fruit Unity 2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.722 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1722ms)
-		BeginReloadAssembly (217ms)
+	ReloadAssembly (1739ms)
+		BeginReloadAssembly (212ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (46ms)
-		EndReloadAssembly (1337ms)
-			LoadAssemblies (161ms)
+		EndReloadAssembly (1361ms)
+			LoadAssemblies (156ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (397ms)
+			SetupTypeCache (425ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (660ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (665ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (26ms)
+				InitializePlatformSupportModulesInManaged (24ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (220ms)
-				ProcessInitializeOnLoadAttributes (329ms)
+				BeforeProcessingInitializeOnLoad (215ms)
+				ProcessInitializeOnLoadAttributes (342ms)
 				ProcessInitializeOnLoadMethodAttributes (59ms)
-				AfterProcessingInitializeOnLoad (24ms)
+				AfterProcessingInitializeOnLoad (22ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.47 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 5.44 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3844 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 29 unused Assets / (79.3 KB). Loaded Objects now: 4331.
-Memory consumption went from 137.9 MB to 137.8 MB.
-Total: 4.028200 ms (FindLiveObjects: 0.347600 ms CreateObjectMapping: 0.171900 ms MarkObjects: 3.401000 ms  DeleteObjects: 0.106100 ms)
+Unloading 29 unused Assets / (79.4 KB). Loaded Objects now: 4331.
+Memory consumption went from 137.9 MB to 137.9 MB.
+Total: 4.030200 ms (FindLiveObjects: 0.381500 ms CreateObjectMapping: 0.171600 ms MarkObjects: 3.362700 ms  DeleteObjects: 0.112800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -396,12 +439,12 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 11.42 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 10.89 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 29 unused Assets / (76.7 KB). Loaded Objects now: 4331.
 Memory consumption went from 61.2 MB to 61.1 MB.
-Total: 4.060600 ms (FindLiveObjects: 0.344500 ms CreateObjectMapping: 0.167100 ms MarkObjects: 3.436100 ms  DeleteObjects: 0.111800 ms)
+Total: 3.928700 ms (FindLiveObjects: 0.336900 ms CreateObjectMapping: 0.167900 ms MarkObjects: 3.328200 ms  DeleteObjects: 0.094700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 

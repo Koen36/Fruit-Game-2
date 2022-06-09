@@ -127,7 +127,7 @@ MonoBehaviour:
   syncInterval: 0.1
   Speed: 12
   JumpForce: 200
-  mouseSensitivity: 100
+  mouseSensitivity: 120
   PlayerModel: {fileID: 1483126840321770437}
   Camera: {fileID: 2799715820212401075}
   PlayerRigid: {fileID: 7561613909115932583}

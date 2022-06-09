@@ -9,7 +9,7 @@ public class PlayerMovementController : NetworkBehaviour
     public float Speed = 12f;
     float ActualSpeed;
     public float JumpForce = 200f;
-    public float mouseSensitivity = 100f;
+    public float mouseSensitivity = 150f;
     float xRotation = 0f;
 
     public GameObject PlayerModel;
