@@ -21,11 +21,10 @@ public class PlayerUIController : MonoBehaviour
             Instance = this;
         }
 
-        LoadLevelUI();
-        DisableGameplayUI();
+        LoadLevelUI(true);
     }
 
-    public void LoadLevelUI()
+    public void LoadLevelUI(bool init)
     {
         Canvas = Instantiate(CanvasPrefab);
         PauseMenu = Instantiate(PauseMenuPrefab);
@@ -37,8 +36,11 @@ public class PlayerUIController : MonoBehaviour
         PauseMenu.transform.localScale = Vector3.one;
         UI.transform.localPosition = Vector3.zero;
 
-        DisablePauseUI();
-        EnableGameplayUI();
+        if (!init)
+        {
+            DisablePauseUI();
+            EnableGameplayUI();
+        }
     } //Load necessery UI (Pause Menu and Status things)
 
     public bool TogglePauseUI() 
@@ -49,11 +51,11 @@ public class PlayerUIController : MonoBehaviour
 
         if (Pause)
         {
-            Cursor.lockState = CursorLockMode.None; //Disable lock cursor inside window
+            DisableCursorLock();
         }
         else
         {
-            Cursor.lockState = CursorLockMode.Locked; //Lock cursor inside window
+            EnableCursorLock();
         }
 
         return Pause;
@@ -62,7 +64,7 @@ public class PlayerUIController : MonoBehaviour
     public void DisablePauseUI()
     {
         PauseMenu.SetActive(false);
-        Cursor.lockState = CursorLockMode.None;
+        EnableCursorLock();
     } //Disable pause menu
 
     public void EnableGameplayUI()
@@ -75,4 +77,16 @@ public class PlayerUIController : MonoBehaviour
         //GEEN IDEE WELK MENU NOG
         UI.SetActive(false);
     } //Disable UI
+
+    public void DisableCursorLock()
+    {
+        Cursor.lockState = CursorLockMode.None; //Disable lock cursor inside window
+        Debug.Log("Cursor free");
+    }
+
+    public void EnableCursorLock()
+    {
+        Cursor.lockState = CursorLockMode.Locked; //Lock cursor inside window
+        Debug.Log("Cursor locked");
+    }
 }

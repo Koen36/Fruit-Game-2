@@ -46,9 +46,8 @@ public class PlayerMovementController : NetworkBehaviour
                 PlayerModel.SetActive(true);
                 Debug.Log("Forest PlayerModel enabled");
 
-                Cursor.lockState = CursorLockMode.Locked; //Lock cursor inside window
-
-                PlayerUIController.Instance.LoadLevelUI();
+                PlayerUIController.Instance.EnableCursorLock();
+                PlayerUIController.Instance.LoadLevelUI(false);
             }
 
             if (hasAuthority) //Only things that you have authority over and you want to control

@@ -159,7 +159,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 4932}
+      Script: {instanceID: 4934}
     - Class: 114
       Script: {instanceID: 8576}
     - Class: 115
@@ -200,27 +200,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1590}
     - Class: 114
-      Script: {instanceID: 2482}
+      Script: {instanceID: 1592}
     - Class: 114
-      Script: {instanceID: 2828}
+      Script: {instanceID: 2484}
     - Class: 114
-      Script: {instanceID: 3414}
+      Script: {instanceID: 2830}
     - Class: 114
-      Script: {instanceID: 3646}
+      Script: {instanceID: 3416}
     - Class: 114
-      Script: {instanceID: 3700}
+      Script: {instanceID: 3648}
     - Class: 114
-      Script: {instanceID: 3856}
+      Script: {instanceID: 3702}
     - Class: 114
-      Script: {instanceID: 4374}
+      Script: {instanceID: 3858}
     - Class: 114
-      Script: {instanceID: 4932}
+      Script: {instanceID: 4376}
     - Class: 114
-      Script: {instanceID: 5070}
+      Script: {instanceID: 4934}
     - Class: 114
-      Script: {instanceID: 5830}
+      Script: {instanceID: 5072}
     - Class: 114
-      Script: {instanceID: 6514}
+      Script: {instanceID: 5832}
     - Class: 114
       Script: {instanceID: 6682}
     - Class: 114
@@ -301,33 +301,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1590}
     - Class: 114
-      Script: {instanceID: 2336}
+      Script: {instanceID: 1592}
     - Class: 114
-      Script: {instanceID: 2482}
+      Script: {instanceID: 2338}
     - Class: 114
-      Script: {instanceID: 2828}
+      Script: {instanceID: 2484}
     - Class: 114
-      Script: {instanceID: 3414}
+      Script: {instanceID: 2830}
     - Class: 114
-      Script: {instanceID: 3700}
+      Script: {instanceID: 3416}
     - Class: 114
-      Script: {instanceID: 3856}
+      Script: {instanceID: 3702}
     - Class: 114
-      Script: {instanceID: 4528}
+      Script: {instanceID: 3858}
     - Class: 114
-      Script: {instanceID: 4656}
+      Script: {instanceID: 4530}
     - Class: 114
-      Script: {instanceID: 4932}
+      Script: {instanceID: 4658}
     - Class: 114
-      Script: {instanceID: 4956}
+      Script: {instanceID: 4934}
     - Class: 114
-      Script: {instanceID: 5002}
+      Script: {instanceID: 4958}
     - Class: 114
-      Script: {instanceID: 5070}
+      Script: {instanceID: 5004}
     - Class: 114
-      Script: {instanceID: 5830}
+      Script: {instanceID: 5072}
     - Class: 114
-      Script: {instanceID: 6514}
+      Script: {instanceID: 5832}
     - Class: 114
       Script: {instanceID: 6682}
     - Class: 114
@@ -379,6 +379,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: a1aa98c78061c6f03a8c124cda576e67
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: bcaee4c2a83047257b5f47d6ed264b75
@@ -1377,12 +1383,6 @@ ScriptsOnlyBuild:
     className: BenchmarkNetworkManager
   - hash:
       serializedVersion: 2
-      Hash: a1aa98c78061c6f03a8c124cda576e67
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
-  - hash:
-      serializedVersion: 2
       Hash: 4d16cfbaa8e821a2b370e80844a0e9bc
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1887,7 +1887,7 @@ ScriptsOnlyBuild:
     className: VertexColorCycler
   - hash:
       serializedVersion: 2
-      Hash: ea6423b92f9d4519a1d2fdf778b8a73b
+      Hash: 72ef7d636f5a8478fa55b384cea66844
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerUIController
