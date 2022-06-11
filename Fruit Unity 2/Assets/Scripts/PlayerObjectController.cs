@@ -146,6 +146,7 @@ public class PlayerObjectController : NetworkBehaviour
     {
         manager.StartGame(SceneName);
     }
+
     public void CanStartGame(string SceneName)
     {
         if (hasAuthority)
@@ -166,6 +167,7 @@ public class PlayerObjectController : NetworkBehaviour
         this.Ready = false;
         this.IsHost = false;
     }
+
     public void DestroyInfo()
     {
         if (hasAuthority)

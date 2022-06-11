@@ -6,44 +6,55 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovementController : NetworkBehaviour
 {
-    public float Speed = 12f;
-    float ActualSpeed;
-    public float JumpForce = 200f;
+    //Physics variables
+    public float speed = 12f;
+    public float jumpForce = 200f;
     public float mouseSensitivity = 150f;
+    public float clampAngle = 85f;
+    float actualSpeed;
     float xRotation = 0f;
 
-    public GameObject PlayerModel;
-    GameObject MainCamera;
-    GameObject LocalPlayer;
-    public Rigidbody PlayerRigid;
+    //GameObjects
+    public GameObject playerModel;
+    GameObject mainCamera;
+    GameObject localPlayer;
+    public Rigidbody playerRigid;
 
-    public Vector3 SpawnPosition;
-    public Vector3 Velocity;
+    //Vector3
+    public Vector3 spawnPosition;
 
+    //Shoot
+    public Transform shootOrigin;
+    public GameObject projectile;
+    public int health = 100;
+    public int itemAmount = 50;
+
+
+    //Pause
     bool PauseToggled = false;
 
 
     public void Start()
     {
-        PlayerModel.SetActive(false);
+        playerModel.SetActive(false);
     }
 
     public void Update()
     {
         if(SceneManager.GetActiveScene().name == "Forest")
         {
-            if(!PlayerModel.activeSelf)
+            if(!playerModel.activeSelf)
             {
                 SetPosition();
                 Debug.Log("Player spawned");
 
-                MainCamera = GameObject.Find("Main Camera");
-                LocalPlayer = GameObject.Find("LocalGamePlayer");
+                mainCamera = GameObject.Find("Main Camera");
+                localPlayer = GameObject.Find("LocalGamePlayer");
 
-                MainCamera.transform.SetParent(LocalPlayer.transform); //Sets object inside the content
-                MainCamera.transform.localPosition = new Vector3 (0f,0.6f,0f); //Sets position of the object to Vector3
+                mainCamera.transform.SetParent(localPlayer.transform); //Sets object inside the content
+                mainCamera.transform.localPosition = new Vector3 (0f,0.6f,0f); //Sets position of the object to Vector3
 
-                PlayerModel.SetActive(true);
+                playerModel.SetActive(true);
                 Debug.Log("Forest PlayerModel enabled");
 
                 PlayerUIController.Instance.EnableCursorLock();
@@ -56,6 +67,7 @@ public class PlayerMovementController : NetworkBehaviour
                 {
                     Movement();
                     Rotate();
+                    Shoot();
                 }
                 Pause();
             }
@@ -64,8 +76,8 @@ public class PlayerMovementController : NetworkBehaviour
 
     public void SetPosition() //Spawn player
     {
-        SpawnPosition = new Vector3(Random.Range(-10, 10), 1.5f, Random.Range(-10, 10)); //Random spawn player "Random.Range(-10, 10)"
-        transform.position = SpawnPosition;
+        spawnPosition = new Vector3(Random.Range(-10, 10), 1.5f, Random.Range(-10, 10)); //Random spawn player "Random.Range(-10, 10)"
+        transform.position = spawnPosition;
     }
     
     public void Movement()
@@ -75,13 +87,13 @@ public class PlayerMovementController : NetworkBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        transform.position += (transform.right * x + transform.forward * z) * Time.deltaTime * ActualSpeed;
+        transform.position += (transform.right * x + transform.forward * z) * Time.deltaTime * actualSpeed;
 
         Jump();
 
         if (transform.position.y < -10 || transform.position.y > 100)
         {
-            transform.position = SpawnPosition;
+            transform.position = spawnPosition;
         }
     } //Move player
 
@@ -89,19 +101,19 @@ public class PlayerMovementController : NetworkBehaviour
     {
         if (Input.GetKey("left shift"))
         {
-            ActualSpeed = Speed * 1.5f;
+            actualSpeed = speed * 1.5f;
         }
         else
         {
-            ActualSpeed = Speed;
+            actualSpeed = speed;
         }
     } //Lets player run
 
     public void Jump()
     {
-        if (Input.GetKeyDown("space") & PlayerRigid.velocity.y == 0f)
+        if (Input.GetKeyDown("space") & playerRigid.velocity.y == 0f)
         {
-            PlayerRigid.AddForce(transform.up * JumpForce);
+            playerRigid.AddForce(transform.up * jumpForce);
         }
     } //Lets player jump
 
@@ -111,12 +123,42 @@ public class PlayerMovementController : NetworkBehaviour
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-        MainCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        xRotation = Mathf.Clamp(xRotation, -clampAngle, clampAngle);
+        mainCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
         transform.Rotate(Vector3.up * mouseX);
 
     } //Rotate player
+
+    public void Shoot() //Shoot projectiles
+    {
+        if (Input.GetMouseButton(0) & health > 0 & itemAmount > 0)
+        {
+            itemAmount--;
+
+            Ray ray = new Ray(mainCamera.transform.position, mainCamera.transform.forward);
+            RaycastHit hit;
+            Vector3 targetPoint;
+            Vector3 directionWithoutSpread;
+            //Vector3 directionWithSpread;
+            //float x;
+            float y;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                targetPoint = hit.point;
+            }
+            else
+            {
+                targetPoint = ray.GetPoint(75);
+            }
+            directionWithoutSpread = (targetPoint - shootOrigin.position).normalized;
+
+            //NetworkManager.instance.InstantiateBananaProjectile(shootOrigin, directionWithoutSpread).InitializeBananaProjectile(directionWithoutSpread, bananaShootForce, id);
+
+            //SHOOT ORIGIN ASSIGN
+        }
+    }
 
     public void Pause()
     {
