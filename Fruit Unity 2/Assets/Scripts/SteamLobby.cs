@@ -25,10 +25,13 @@ public class SteamLobby : MonoBehaviour
     public ulong CurrentLobbyID;
     private const string HostAddressKey = "HostAddress";
     private CustomNetworkManager manager;
+    public bool IsHost = false;
 
 
     private void Start()
     {
+        SteamAPI.Init();
+
         if (!SteamManager.Initialized)
         {
             Debug.Log("Steam is NOT open!");
@@ -89,32 +92,8 @@ public class SteamLobby : MonoBehaviour
         manager.networkAddress = SteamMatchmaking.GetLobbyData(new CSteamID(callback.m_ulSteamIDLobby), HostAddressKey);
         manager.StartClient();
 
-        //Only Host
+        //Host
     }
-
-
-
-    public void LeaveLobby()
-    {
-        SteamMatchmaking.LeaveLobby((CSteamID)CurrentLobbyID);
-        CurrentLobbyID = 0;
-
-        //Disposing callbacks
-        LobbyCreated.Dispose();
-        JoinRequest.Dispose();
-        LobbyEntered.Dispose();
-
-        LobbyList.Dispose();
-        LobbyDataUpdated.Dispose();
-
-        //Initiating callbacks (again)
-        LobbyCreated = Callback<LobbyCreated_t>.Create(OnLobbyCreated);
-        JoinRequest = Callback<GameLobbyJoinRequested_t>.Create(OnJoinRequest);
-        LobbyEntered = Callback<LobbyEnter_t>.Create(OnLobbyEntered);
-
-        LobbyList = Callback<LobbyMatchList_t>.Create(OnGetLobbyList);
-        LobbyDataUpdated = Callback<LobbyDataUpdate_t>.Create(OnGetLobbyData);
-    } //When you leave a lobby
 
 
 
@@ -122,6 +101,43 @@ public class SteamLobby : MonoBehaviour
     {
         SteamMatchmaking.JoinLobby(lobbyID);
     } //When you join a lobby
+
+    public void LeaveLobby()
+    {
+        //Disposing callbacks
+    //    LobbyCreated.Dispose();
+    //    JoinRequest.Dispose();
+    //    LobbyEntered.Dispose();
+
+    //    LobbyList.Dispose();
+    //    LobbyDataUpdated.Dispose();
+
+        //Initiating callbacks (again)
+    //    LobbyCreated = Callback<LobbyCreated_t>.Create(OnLobbyCreated);
+    //    JoinRequest = Callback<GameLobbyJoinRequested_t>.Create(OnJoinRequest);
+    //    LobbyEntered = Callback<LobbyEnter_t>.Create(OnLobbyEntered);
+
+    //    LobbyList = Callback<LobbyMatchList_t>.Create(OnGetLobbyList);
+    //    LobbyDataUpdated = Callback<LobbyDataUpdate_t>.Create(OnGetLobbyData);
+
+        if (IsHost)
+        {
+            manager.StopHost();
+            IsHost = false;
+        }
+        else
+        {
+            manager.StopClient();
+        }
+
+        SteamAPI.Init();
+        //SteamAPI.RestartAppIfNecessary((AppId_t) 480);
+
+    //    manager.Reset();
+
+    //    SteamMatchmaking.LeaveLobby((CSteamID)CurrentLobbyID);
+    //    CurrentLobbyID = 0;
+    } //When you leave a lobby
 
 
 

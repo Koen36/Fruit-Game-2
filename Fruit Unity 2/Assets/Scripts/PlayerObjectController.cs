@@ -126,6 +126,8 @@ public class PlayerObjectController : NetworkBehaviour
         {
             LobbyController.Instance.UpdatePlayerList();
         }
+
+        SteamLobby.Instance.IsHost = NewValue; //Sets variable inside SteamLobby Instance
     }
 
     public void ChangeHost()

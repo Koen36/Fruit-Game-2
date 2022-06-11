@@ -78,15 +78,15 @@ public class PlayerUIController : MonoBehaviour
         UI.SetActive(false);
     } //Disable UI
 
-    public void DisableCursorLock()
-    {
-        Cursor.lockState = CursorLockMode.None; //Disable lock cursor inside window
-        Debug.Log("Cursor free");
-    }
-
     public void EnableCursorLock()
     {
         Cursor.lockState = CursorLockMode.Locked; //Lock cursor inside window
         Debug.Log("Cursor locked");
-    }
+    } //Hide cursor and lock cursor in middle of the screen
+
+    public void DisableCursorLock()
+    {
+        Cursor.lockState = CursorLockMode.None; //Disable lock cursor inside window
+        Debug.Log("Cursor free");
+    } //Show cursor and disable lock
 }

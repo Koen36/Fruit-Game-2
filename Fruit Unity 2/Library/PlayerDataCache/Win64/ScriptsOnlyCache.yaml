@@ -44,6 +44,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.RawImage
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
     Mirror:
@@ -81,6 +82,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.ScrollRect/ScrollRectEvent
     - UnityEngine.UI.Scrollbar/ScrollEvent
+    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
@@ -119,6 +121,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: LobbiesListManager
+    methodName: Back
   - assembly: Assembly-CSharp
     fullTypeName: LobbyController
     methodName: StartGame
@@ -311,9 +316,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3416}
     - Class: 114
+      Script: {instanceID: 3648}
+    - Class: 114
       Script: {instanceID: 3702}
     - Class: 114
       Script: {instanceID: 3858}
+    - Class: 114
+      Script: {instanceID: 4376}
     - Class: 114
       Script: {instanceID: 4530}
     - Class: 114
@@ -327,6 +336,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5072}
     - Class: 114
+      Script: {instanceID: 5724}
+    - Class: 114
       Script: {instanceID: 5832}
     - Class: 114
       Script: {instanceID: 6682}
@@ -335,7 +346,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7086}
     - Class: 114
+      Script: {instanceID: 7098}
+    - Class: 114
       Script: {instanceID: 7252}
+    - Class: 114
+      Script: {instanceID: 7576}
     - Class: 114
       Script: {instanceID: 7898}
     - Class: 114
@@ -344,6 +359,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 8198}
     - Class: 114
       Script: {instanceID: 8228}
+    - Class: 114
+      Script: {instanceID: 8374}
     - Class: 114
       Script: {instanceID: 8576}
     - Class: 114
@@ -359,6 +376,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -1437,7 +1456,7 @@ ScriptsOnlyBuild:
     className: NetworkStartPosition
   - hash:
       serializedVersion: 2
-      Hash: 2c4c4ae90b9ef16ae805e9087f5dbf8e
+      Hash: 41cd48b08bdcd31791c523c3ee50fe81
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SteamLobby

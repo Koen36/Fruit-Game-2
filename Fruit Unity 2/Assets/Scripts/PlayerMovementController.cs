@@ -122,7 +122,7 @@ public class PlayerMovementController : NetworkBehaviour
     {
         if (Input.GetKeyDown("escape"))
         {
-            PauseToggled = PlayerUIController.Instance.TogglePauseUI();
+            PauseToggled = PlayerUIController.Instance.TogglePauseUI(); //PauseToggled determines if you can walk and look around as a character
         }
-    }
+    } //Pauses screen
 }

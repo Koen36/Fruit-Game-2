@@ -60,4 +60,10 @@ public class LobbiesListManager : MonoBehaviour
         }
         listOfLobbies.Clear();
     }
+
+    public void Back()
+    {
+        onlineMenu.SetActive(true);
+        lobbiesMenu.SetActive(false);
+    }
 }
