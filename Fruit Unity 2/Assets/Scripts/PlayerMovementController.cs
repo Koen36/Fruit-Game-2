@@ -13,7 +13,6 @@ public class PlayerMovementController : NetworkBehaviour
     float xRotation = 0f;
 
     public GameObject PlayerModel;
-    public GameObject Camera;
     GameObject MainCamera;
     GameObject LocalPlayer;
     public Rigidbody PlayerRigid;
@@ -21,11 +20,12 @@ public class PlayerMovementController : NetworkBehaviour
     public Vector3 SpawnPosition;
     public Vector3 Velocity;
 
+    bool PauseToggled = false;
+
 
     public void Start()
     {
         PlayerModel.SetActive(false);
-        Camera.SetActive(false);
     }
 
     public void Update()
@@ -39,21 +39,26 @@ public class PlayerMovementController : NetworkBehaviour
 
                 MainCamera = GameObject.Find("Main Camera");
                 LocalPlayer = GameObject.Find("LocalGamePlayer");
-                //MainCamera.SetActive(false);
 
                 MainCamera.transform.SetParent(LocalPlayer.transform); //Sets object inside the content
-                MainCamera.transform.localPosition = new Vector3 (0f,0.6f,0f); //Scale the object (back) to 1
+                MainCamera.transform.localPosition = new Vector3 (0f,0.6f,0f); //Sets position of the object to Vector3
 
                 PlayerModel.SetActive(true);
                 Debug.Log("Forest PlayerModel enabled");
 
                 Cursor.lockState = CursorLockMode.Locked; //Lock cursor inside window
+
+                PlayerUIController.Instance.LoadLevelUI();
             }
 
             if (hasAuthority) //Only things that you have authority over and you want to control
             {
-                Movement();
-                Rotate();
+                if (!PauseToggled)
+                {
+                    Movement();
+                    Rotate();
+                }
+                Pause();
             }
         }
     }
@@ -95,7 +100,7 @@ public class PlayerMovementController : NetworkBehaviour
 
     public void Jump()
     {
-        if (Input.GetKeyDown("space") & PlayerRigid.velocity.y == 0)
+        if (Input.GetKeyDown("space") & PlayerRigid.velocity.y == 0f)
         {
             PlayerRigid.AddForce(transform.up * JumpForce);
         }
@@ -113,4 +118,12 @@ public class PlayerMovementController : NetworkBehaviour
         transform.Rotate(Vector3.up * mouseX);
 
     } //Rotate player
+
+    public void Pause()
+    {
+        if (Input.GetKeyDown("escape"))
+        {
+            PauseToggled = PlayerUIController.Instance.TogglePauseUI();
+        }
+    }
 }
