@@ -230,9 +230,9 @@
     <Compile Include="Assets\Mirror\Runtime\NetworkReaderPooled.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transport\FizzySteamworks\Dependencies\Runtime\types\SteamNetworking\SNetListenSocket_t.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transport\FizzySteamworks\Dependencies\Runtime\types\SteamInput\InputDigitalActionHandle_t.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\FizzySteamworks\Dependencies\Runtime\types\SteamNetworkingTypes\SteamNetworkingIPAddr.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transport\FizzySteamworks\Dependencies\Runtime\autogen\isteamhttp.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transport\FizzySteamworks\Dependencies\Runtime\autogen\isteamunifiedmessages.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transport\FizzySteamworks\Dependencies\Runtime\types\SteamNetworkingTypes\SteamNetworkingIPAddr.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transport\FizzySteamworks\Dependencies\Runtime\types\SteamInput\InputAnalogActionHandle_t.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transport\FizzySteamworks\Dependencies\Runtime\types\SteamNetworking\SNetSocket_t.cs" />
     <Compile Include="Assets\Mirror\Runtime\MessagePacking.cs" />

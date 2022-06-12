@@ -16,6 +16,7 @@ public class PlayerMovementController : NetworkBehaviour
 
     //GameObjects
     public GameObject playerModel;
+    public GameObject weaponModel;
     GameObject mainCamera;
     GameObject localPlayer;
     public Rigidbody playerRigid;
@@ -25,7 +26,8 @@ public class PlayerMovementController : NetworkBehaviour
 
     //Shoot
     public Transform shootOrigin;
-    public GameObject projectile;
+    public GameObject projectilePrefab;
+    public float ShootForce = 2000f;
     public int health = 100;
     public int itemAmount = 50;
 
@@ -52,7 +54,11 @@ public class PlayerMovementController : NetworkBehaviour
                 localPlayer = GameObject.Find("LocalGamePlayer");
 
                 mainCamera.transform.SetParent(localPlayer.transform); //Sets object inside the content
-                mainCamera.transform.localPosition = new Vector3 (0f,0.6f,0f); //Sets position of the object to Vector3
+                mainCamera.transform.localPosition = new Vector3 (0f,0.66f,0f); //Sets position of the object to Vector3
+
+                weaponModel.transform.SetParent(mainCamera.transform);
+                weaponModel.transform.localPosition = new Vector3(1.1f, -0.27f, 2.7f);
+                weaponModel.transform.localRotation = Quaternion.Euler(-90f, 0f, 0f);
 
                 playerModel.SetActive(true);
                 Debug.Log("Forest PlayerModel enabled");
@@ -132,17 +138,19 @@ public class PlayerMovementController : NetworkBehaviour
 
     public void Shoot() //Shoot projectiles
     {
-        if (Input.GetMouseButton(0) & health > 0 & itemAmount > 0)
+        if (Input.GetMouseButtonDown(0) & health > 0 & itemAmount > 0)
         {
             itemAmount--;
 
+            //int playerID = GameObject.Find("LocalGamePlayer").GetComponent<PlayerObjectController>().ConnectionID;
+            int playerID = localPlayer.GetComponent<PlayerObjectController>().ConnectionID;
             Ray ray = new Ray(mainCamera.transform.position, mainCamera.transform.forward);
             RaycastHit hit;
             Vector3 targetPoint;
             Vector3 directionWithoutSpread;
             //Vector3 directionWithSpread;
             //float x;
-            float y;
+            //float y;
 
             if (Physics.Raycast(ray, out hit))
             {
@@ -152,13 +160,40 @@ public class PlayerMovementController : NetworkBehaviour
             {
                 targetPoint = ray.GetPoint(75);
             }
+
             directionWithoutSpread = (targetPoint - shootOrigin.position).normalized;
 
-            //NetworkManager.instance.InstantiateBananaProjectile(shootOrigin, directionWithoutSpread).InitializeBananaProjectile(directionWithoutSpread, bananaShootForce, id);
-
-            //SHOOT ORIGIN ASSIGN
+            InstantiateProjectile(shootOrigin, directionWithoutSpread).InitializeProjectile(directionWithoutSpread, ShootForce, playerID);
         }
     }
+
+    public Projectile InstantiateProjectile(Transform shootOrigin, Vector3 direction)
+    {
+        return Instantiate(projectilePrefab, shootOrigin.position, Quaternion.LookRotation(direction, Vector3.up)).GetComponent<Projectile>(); //Instantiate projectile and return Projectile
+    }
+
+    /*
+    if (leftShot == true)
+        {
+            leftShot = false;
+            directionWithoutSpread = (targetPoint - shootOrigin2.position).normalized;
+            x = Random.Range(-melonSpread, melonSpread);
+            y = Random.Range(-melonSpread, melonSpread);
+            directionWithSpread = directionWithoutSpread + new Vector3(x, y, 0); //Does this work in normalized way
+
+            NetworkManager.instance.InstantiateMelonProjectile(shootOrigin2, directionWithSpread).InitializeMelonProjectile(directionWithSpread, melonShootForce, id);
+        }
+        else
+        {
+            leftShot = true;
+            directionWithoutSpread = (targetPoint - shootOrigin.position).normalized;
+            x = Random.Range(-melonSpread, melonSpread);
+            y = Random.Range(-melonSpread, melonSpread);
+            directionWithSpread = directionWithoutSpread + new Vector3(x, y, 0); //Does this work in normalized way
+
+            NetworkManager.instance.InstantiateMelonProjectile(shootOrigin, directionWithSpread).InitializeMelonProjectile(directionWithSpread, melonShootForce, id);
+        }
+    */
 
     public void Pause()
     {

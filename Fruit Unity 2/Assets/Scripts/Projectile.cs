@@ -9,12 +9,12 @@ public class Projectile : MonoBehaviour
 
     public int id;
     public Rigidbody rigidBody;
-    public int shootByPlayer;
-    public Vector3 initialForce;
+    public Collider collider;
+    public int shotByPlayer;
+    public Vector3 initialVector;
     public float explosionRadius = 1.5f;
     public float explosionDamage = 75f;
     public int charNumber;
-    private bool firstTime = true;
 
     private void Start()
     {
@@ -22,32 +22,39 @@ public class Projectile : MonoBehaviour
         nextProjectileId++;
         projectiles.Add(id, this);
 
-        rigidBody.AddForce(initialForce);
+        rigidBody.AddForce(initialVector);
         StartCoroutine(ExplodeAfterTime());
-
-        //ServerSend.SpawnProjectile(this, shootByPlayer);
     }
 
-    private void FixedUpdate()
+    public void InitializeProjectile(Vector3 movementDirection, float initialForce, int player)
     {
-        if (firstTime == false)
-        {
-            transform.rotation = Quaternion.LookRotation(GetComponent<Rigidbody>().velocity);
-        }
-        //ServerSend.ProjectilePosition(this);
-        firstTime = false;
+        initialVector = movementDirection * initialForce;
+        shotByPlayer = player;
+        charNumber = 1;
+
+        //transform.rotation = Quaternion.LookRotation(GetComponent<Rigidbody>().velocity);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        Explode();
-    }
+        Debug.Log("Collision");
 
-    public void InitializeBananaProjectile(Vector3 _initialMovementDirection, float _initialForceStrength, int _shootByPlayer)
-    {
-        initialForce = _initialMovementDirection * _initialForceStrength;
-        shootByPlayer = _shootByPlayer;
-        charNumber = 1;
+        if (collision.gameObject.tag == "Projectile" || collision.gameObject.tag ==  "Player")
+        {
+            Debug.Log("Ignore");
+            Physics.IgnoreCollision(collision.gameObject.GetComponent<Collider>(), collider);
+        }
+        else
+        {
+            Debug.Log("Freeze");
+            rigidBody.constraints = RigidbodyConstraints.FreezeAll;
+
+            if (collision.gameObject == gameObject.CompareTag("Player"))
+            {
+                Debug.Log("Explode");
+                Explode();
+            }
+        }
     }
 
     private void Explode()
@@ -72,7 +79,7 @@ public class Projectile : MonoBehaviour
 
     private IEnumerator ExplodeAfterTime()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(15f);
 
         Explode();
     }
