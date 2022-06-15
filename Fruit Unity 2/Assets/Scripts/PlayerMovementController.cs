@@ -29,7 +29,9 @@ public class PlayerMovementController : NetworkBehaviour
     public GameObject projectilePrefab;
     public float ShootForce = 2000f;
     public int health = 100;
-    public int itemAmount = 50;
+    public int itemAmount = 100;
+    public float shootDelay = 0.5f; //In secondes
+    public bool canShoot = true;
 
 
     //Pause
@@ -41,7 +43,7 @@ public class PlayerMovementController : NetworkBehaviour
         playerModel.SetActive(false);
     }
 
-    public void Update()
+    public void FixedUpdate()
     {
         if(SceneManager.GetActiveScene().name == "Forest")
         {
@@ -69,7 +71,7 @@ public class PlayerMovementController : NetworkBehaviour
 
             if (hasAuthority) //Only things that you have authority over and you want to control
             {
-                if (!PauseToggled)
+                if (!PauseToggled & health > 0)
                 {
                     Movement();
                     Rotate();
@@ -117,7 +119,7 @@ public class PlayerMovementController : NetworkBehaviour
 
     public void Jump()
     {
-        if (Input.GetKeyDown("space") & playerRigid.velocity.y == 0f)
+        if (Input.GetKey("space") & playerRigid.velocity.y == 0f)
         {
             playerRigid.AddForce(transform.up * jumpForce);
         }
@@ -138,7 +140,7 @@ public class PlayerMovementController : NetworkBehaviour
 
     public void Shoot() //Shoot projectiles
     {
-        if (Input.GetMouseButtonDown(0) & health > 0 & itemAmount > 0)
+        if (Input.GetMouseButton(0) & canShoot & itemAmount > 0)
         {
             itemAmount--;
 
@@ -164,7 +166,17 @@ public class PlayerMovementController : NetworkBehaviour
             directionWithoutSpread = (targetPoint - shootOrigin.position).normalized;
 
             InstantiateProjectile(shootOrigin, directionWithoutSpread).InitializeProjectile(directionWithoutSpread, ShootForce, playerID);
+            
+            //Setup Delay
+            canShoot = false;
+            StartCoroutine(ShootDelay());
         }
+    }
+
+    IEnumerator ShootDelay()
+    {
+        yield return new WaitForSeconds(shootDelay);
+        canShoot = true;
     }
 
     public Projectile InstantiateProjectile(Transform shootOrigin, Vector3 direction)

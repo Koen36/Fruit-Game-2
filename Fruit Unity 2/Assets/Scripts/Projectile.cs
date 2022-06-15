@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public static Dictionary<int, Projectile> projectiles = new Dictionary<int, Projectile>();
-    private static int nextProjectileId = 1;
+    public ProjectileObjectController localProjectileController;
 
-    public int id;
+    public int projectileID;
     public Rigidbody rigidBody;
     public Collider collider;
     public int shotByPlayer;
@@ -18,10 +17,6 @@ public class Projectile : MonoBehaviour
 
     private void Start()
     {
-        id = nextProjectileId;
-        nextProjectileId++;
-        projectiles.Add(id, this);
-
         rigidBody.AddForce(initialVector);
         StartCoroutine(ExplodeAfterTime());
     }
@@ -31,10 +26,30 @@ public class Projectile : MonoBehaviour
         initialVector = movementDirection * initialForce;
         shotByPlayer = player;
         charNumber = 1;
+    }
 
+    public void FixedUpdate()
+    {
         //transform.rotation = Quaternion.LookRotation(GetComponent<Rigidbody>().velocity);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Collision");
+
+        if (other.gameObject.tag != "Projectile" || other.gameObject.tag != "Player")
+        {
+            Debug.Log("Freeze");
+            rigidBody.constraints = RigidbodyConstraints.FreezeAll;
+
+            if (other.gameObject == gameObject.CompareTag("Player"))
+            {
+                Debug.Log("Explode");
+                Explode();
+            }
+        }
+    }
+    /*
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Collision");
@@ -56,7 +71,7 @@ public class Projectile : MonoBehaviour
             }
         }
     }
-
+    */
     private void Explode()
     {
         if (charNumber != 2)
@@ -72,9 +87,7 @@ public class Projectile : MonoBehaviour
                 }
             }
         }
-
-        projectiles.Remove(id);
-        Destroy(gameObject);
+        localProjectileController.DestroyNetwork();
     }
 
     private IEnumerator ExplodeAfterTime()

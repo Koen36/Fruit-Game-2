@@ -160,7 +160,9 @@ MonoBehaviour:
   projectilePrefab: {fileID: 7002167066727714067, guid: 264c91d87d5c40745b08e725c0eb2fbd, type: 3}
   ShootForce: 2000
   health: 100
-  itemAmount: 50
+  itemAmount: 100
+  shootDelay: 0.5
+  canShoot: 1
 --- !u!136 &5861592638444253199
 CapsuleCollider:
   m_ObjectHideFlags: 0

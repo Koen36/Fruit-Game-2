@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04314ccdbd485f94b8f31d23d01233e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
+  localProjectileController: {fileID: 0}
+  projectileID: 0
   rigidBody: {fileID: 3011583025468179714}
   collider: {fileID: 6087162158472968396}
   shotByPlayer: 0
@@ -131,7 +132,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7002167066727714067}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1
