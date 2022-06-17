@@ -149,7 +149,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   speed: 12
-  jumpForce: 200
+  jumpForce: 35000
   mouseSensitivity: 120
   clampAngle: 85
   playerModel: {fileID: 1483126840321770437}
@@ -185,7 +185,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827939002183267248}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 70
   m_Drag: 0
   m_AngularDrag: 1
   m_UseGravity: 1

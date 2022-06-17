@@ -19,6 +19,11 @@ public class Projectile : MonoBehaviour
     {
         rigidBody.AddForce(initialVector);
         StartCoroutine(ExplodeAfterTime());
+
+        if (transform.rotation.x != 0f)
+        {
+            transform.rotation = Quaternion.AngleAxis(30, Vector3.right);
+        }
     }
 
     public void InitializeProjectile(Vector3 movementDirection, float initialForce, int player)
@@ -30,14 +35,17 @@ public class Projectile : MonoBehaviour
 
     public void FixedUpdate()
     {
-        //transform.rotation = Quaternion.LookRotation(GetComponent<Rigidbody>().velocity);
+        if (rigidBody.velocity.y != 0)
+        {
+            transform.rotation = Quaternion.LookRotation(GetComponent<Rigidbody>().velocity);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Collision");
 
-        if (other.gameObject.tag != "Projectile" || other.gameObject.tag != "Player")
+        if (other.gameObject.tag != "Projectile")
         {
             Debug.Log("Freeze");
             rigidBody.constraints = RigidbodyConstraints.FreezeAll;
